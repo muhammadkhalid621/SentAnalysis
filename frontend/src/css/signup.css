@@ -1,0 +1,32 @@
+.btn-primary {
+    color: #fff;
+    background-color: #813AFE !important;
+    border-color: #813AFE !important;
+}
+.title {
+    text-align-last: center;
+    /* margin-bottom: 10px; */
+}
+
+.submit{
+    border-radius: 14px;
+    margin-top: 20px;
+    
+}
+
+.createAccount{
+    text-align-last:center;
+    margin-top: 10px;
+}
+
+.back{
+    text-align-last:center;
+    margin-top: 10px;
+}
+
+.errorShow {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 0.5rem;
+    color: #f00e0e;
+  }

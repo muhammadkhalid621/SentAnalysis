@@ -1,0 +1,100 @@
+/* .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 100vh !important;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+#sidebar-wrapper{
+    min-height: 100vh !important;
+    width: 100vh;
+    margin-left: -1rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+} */
+
+.sidebar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+  
+  /* Style sidebar links */
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* Style links on mouse-over */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Style the main content */
+  .main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  .column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title-image {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  .title-image img {
+    height: 100%;
+    transform: translateX(-50%);
+    margin-left: 50%;
+  }
+
+  .name {
+      margin-top: 1rem;
+      margin-left: 3px;
+  }
+
+.email {
+    font-size: 15px;
+  }
+  
+  /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
