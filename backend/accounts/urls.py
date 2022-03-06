@@ -1,13 +1,13 @@
 from django.urls import path, include, re_path
 # from .views import GetUserProfileView, UpdateUserProfileView
-# from .views import UserProfileListCreateView, userProfileDetailView
+from .views import getUserProfile
 from django.views.generic import TemplateView
 
 urlpatterns = [
     #gets all user profiles and create a new profile
 #     path("all-profiles",UserProfileListCreateView.as_view(),name="all-profiles"),
 #    # retrieves profile details of the currently logged in user
-#     path("profile",userProfileDetailView.as_view(),name="profile"),
+    path("profile/",getUserProfile,name="profile"),
     # path('user', GetUserProfileView.as_view(), name="users-profile"),
     # path('update', UpdateUserProfileView.as_view(), name="users-profile-update"),
     path('', include('djoser.urls')),

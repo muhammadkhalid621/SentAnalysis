@@ -1,105 +1,53 @@
-import React from "react";
+import React, {useState} from "react";
 import { Navbar, Offcanvas, Container, Nav } from "react-bootstrap";
 import "../css/sideNav.css";
-import { Logout } from "../actions/auth"
+import { logout } from "../actions/auth";
 import { Redirect } from "react-router";
 import { connect } from "react-redux";
+import logo from "../images/ssk.jpg";
+import img1 from "../images/home-icon.png";
+import img2 from "../images/Computer-icon.png";
+import img3 from "../images/Office-Customer-Male-Light-icon.png";
+import img4 from "../images/alert-icon.png";
+import img5 from "../images/login-icon.png";
 
-function SideNav(Logout) {
-  const onlogout = () => {
-    Logout();
-    return <Redirect to="/login" />
+function SideNav( { logout } ) {
+  const [redirect, setRedirect] = useState(false);
+  const logoutHandler = () => {
+    logout()
+    setRedirect(true)
+    
+  };
+  if (redirect) {
+    return <Redirect to="/login" />;
   }
   return (
     <>
-      {/* <Nav className="md-12 d-none d-md-block bg-light sidebar"
-            activeKey="/dashboard"
-            onSelect={selectedKey => alert(`selected ${selectedKey}`)}
-            >
-                <div className="sidebar-sticky"></div>
-            <Nav.Item>
-                <Nav.Link href="/dashboard">Active</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="link-1">Link</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="link-2">Link</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="disabled" disabled>
-                Disabled
-                </Nav.Link>
-            </Nav.Item>
-            </Nav> */}
-      {/* <div className="container">
-        <ul className="sidebar">
-          <li>
-            <span>Travelers</span>
-          </li>
-          <li>
-            <span>
-              <i className="fa fa-home"></i>
-            </span>
-            <span>Home</span>
-          </li>
-          <li>
-            <span>
-              <i className="fa fa-dashboard"></i>
-            </span>
-            <span>Dashboard</span>
-          </li>
-          <li>
-            <span>
-              <i className="fa fa-users"></i>
-            </span>
-            <span>Users</span>
-          </li>
-          <li>
-            <span>
-              <i className="fa fa-shopping-cart"></i>
-            </span>
-            <span>Products</span>
-          </li>
-          <li>
-            <span>
-              <i className="fa fa-bookmark"></i>
-            </span>
-            <span>Bookmarks</span>
-          </li>
-          <li>
-            <span>
-              <i className="fa fa-gear"></i>
-            </span>
-            <span>Settings</span>
-          </li>
-        </ul>
-
-        <div className="content"></div>
-      </div> */}
-
-      <div className="sidebar">
-        <a href="#home">
-          <i className="fa fa-fw fa-home"></i> Home
-        </a>
-        <a href="/scrapper">
-          <i className="fa fa-fw fa-wrench"></i> Scrapper
+      <nav className="navigation">
+        <img src={logo} alt="" />
+        <a href="/dashboard">
+          {" "}
+          <img className="icon" src={img1} alt="" /> Home
         </a>
         <a href="/models">
-          <i className="fa fa-fw fa-wrench"></i> Models
+          <img className="icon" src={img1} alt="" /> Model
         </a>
-        <a href="#clients">
-          <i className="fa fa-fw fa-user"></i> Clients
+        <a href="/scrapper">
+          <img className="icon" src={img2} alt="" /> Scrapes
         </a>
-        <a href="#contact">
-          <i className="fa fa-fw fa-envelope"></i> Contact
+        <a href="/dashboard">
+          <img className="icon" src={img3} alt="" /> Clients
         </a>
-        <button onClick={onlogout}>
-          <i className="fa fa-fw fa-envelope"></i> Logout
+        <a href="/dashboard">
+          <img className="icon" src={img4} alt="" /> Alerts
+        </a>
+        <button className="nav-btn" onClick={logoutHandler}>
+          {" "}
+          <img src={img5} /> Logout
         </button>
-      </div>
+      </nav>
     </>
   );
 }
 
-export default connect(null, { Logout } )(SideNav);
+export default connect(null, { logout })(SideNav);

@@ -34,6 +34,9 @@ const initialState = {
   number: "",
   gender: "",
   dob: "",
+  image:"",
+  isAdmin: "",
+  error: {},
 };
 
 export default function (state = initialState, action) {
@@ -55,6 +58,7 @@ export default function (state = initialState, action) {
         isAuthenticated: true,
         access: payload.access,
         refresh: payload.refresh,
+        // isAdmin: payload.isAdmin,
       };
     case SIGNUP_SUCCESS:
       return {
@@ -71,6 +75,8 @@ export default function (state = initialState, action) {
         number: payload.number,
         gender: payload.gender,
         dob: payload.dob,
+        image: payload.image,
+        isAdmin: payload.isAdmin,
       };
     case USER_LOADED_FAIL:
       return {
@@ -81,6 +87,8 @@ export default function (state = initialState, action) {
         number: "",
         gender: "",
         dob: "",
+        image: "",
+        isAdmin: "",
       };
     // case USER_LOADED_SUCCESS:
     //     return {
@@ -91,6 +99,7 @@ export default function (state = initialState, action) {
       return {
         ...state,
         isAuthenticated: false,
+        
       };
     // case USER_LOADED_FAIL:
     //     return {
@@ -116,6 +125,10 @@ export default function (state = initialState, action) {
         number: "",
         gender: "",
         dob: "",
+        image:"",
+        isAdmin: "",
+        error: action.payload,
+        
       };
     case DELETE_USER_SUCCESS:
       return {

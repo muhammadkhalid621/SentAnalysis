@@ -3,10 +3,10 @@ import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { login } from "../actions/auth";
 import { Form, Row, Col, Button, Container } from "react-bootstrap";
-import uiImg from "../images/login.jpg";
+import uiImg from "../images/login.svg";
 import "../css/signup.css";
 
-const Login = ({ login, isAuthenticated }) => {
+const Login = ({ login, isAuthenticated, isAdmin }) => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -46,25 +46,31 @@ const Login = ({ login, isAuthenticated }) => {
     }
   };
 
-  if (isAuthenticated) {
-    return <Redirect to="/dashboard" />;
-  }
+  console.log(isAdmin, isAuthenticated);
 
+  if (isAuthenticated) {
+    return <Redirect to="/loadingUser" />;
+  }
+  // if (isAdmin) {
+  //       return <Redirect to="/dashboard" />;
+  //     } else {
+  //       return <Redirect to="/userDashboard" />;
+  //     }
   return (
     <>
       <Container className="mt-1">
         <Row>
-          <Col lg={7} md={7} sm={12}>
-            <img className="w-100" src={uiImg} alt="" />
+          <Col lg={8} md={9} sm={10}>
+            <img className="w-100 mt-5" src={uiImg} alt="" />
           </Col>
-          <Col lg={4} md={7} sm={10} className="mt-1 p-0">
+          <Col lg={4} md={8} sm={10} className="mt-1 p-0">
             {/* <img className="icon-img" src={loginIcon} alt="icon" /> */}
-            <h1 className="mt-3 d-flex justify-content-center">
+            <h1 className="mt-5 d-flex justify-content-center">
               SSK Enterprise
             </h1>
             <h1 className="mt-5 d-flex justify-content-center">Welcome User</h1>
-            <Form onSubmit={onSubmit}>
-              <Form.Group className="mb-0" controlId="formGroupEmail">
+            <Form  onSubmit={onSubmit}>
+              <Form.Group className="mb-0 mt-3" controlId="formGroupEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control
                   name="email"
@@ -111,7 +117,7 @@ const Login = ({ login, isAuthenticated }) => {
                 </span>
               </div>
               <div className="back">
-                <a href="/">Back To Site</a>
+                <a href="/home">Back To Site</a>
               </div>
             </Form>
           </Col>
@@ -122,7 +128,7 @@ const Login = ({ login, isAuthenticated }) => {
 };
 
 const mapStateToProps = (state) => ({
+  isAdmin: state.auth.isAdmin,
   isAuthenticated: state.auth.isAuthenticated,
 });
-
 export default connect(mapStateToProps, { login })(Login);

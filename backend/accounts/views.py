@@ -1,14 +1,21 @@
 # # from django.shortcuts import render
-# # from rest_framework.decorators import api_view, permission_classes
-# # from rest_framework.permissions import IsAuthenticated, IsAdminUser
-# # from rest_framework.response import Response
-# # from .serializers import UserCreateSerializer
-# # from .models import UserAccount
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
+from rest_framework.response import Response
+from .serializers import userProfileSerializer
+from .models import UserAccount
 
 # # from django.contrib.auth.models import User
 # # from django.contrib.auth.hashers import make_password
 # # from rest_framework import status
-
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def getUserProfile(request):
+    user = request.user
+    serializer = userProfileSerializer(user, many=False)
+    print(serializer.data)
+    # print(.FILES.get('image'))
+    return Response(serializer.data)
 # # # Create your views here.
 # # @api_view(['PUT'])
 # # @permission_classes([IsAuthenticated])
@@ -159,15 +166,15 @@
 #         except:
 #             return Response({ 'error': 'Something went wrong when updating profile' })
 
-from rest_framework.generics import (ListCreateAPIView,RetrieveUpdateDestroyAPIView,)
-from rest_framework.permissions import IsAuthenticated
-from .models import userProfile, UserAccount
-from .permissions import IsOwnerProfileOrReadOnly
-from .serializers import userProfileSerializer, UserCreateSerializer
-from rest_framework.decorators import api_view, permission_classes
-from rest_framework.response import Response
-from rest_framework import status
-from rest_framework.parsers import MultiPartParser, FormParser
+# from rest_framework.generics import (ListCreateAPIView,RetrieveUpdateDestroyAPIView,)
+# from rest_framework.permissions import IsAuthenticated
+# from .models import userProfile, UserAccount
+# from .permissions import IsOwnerProfileOrReadOnly
+# from .serializers import userProfileSerializer, UserCreateSerializer
+# from rest_framework.decorators import api_view, permission_classes
+# from rest_framework.response import Response
+# from rest_framework import status
+# from rest_framework.parsers import MultiPartParser, FormParser
 
 # Create your views here.
 # @api_view(['POST'])

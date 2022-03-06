@@ -15,7 +15,6 @@ def library_importer():
   import nltk
   nltk.download('stopwords')
   from os import getcwd
-
   return tf, keras, Tokenizer, pad_sequences, pd, np, model_from_json, re, string, stopwords, PorterStemmer, getcwd 
   # print('import successful')    for debugging
 
@@ -46,6 +45,7 @@ def process_tweet(tweet,re, string, stopwords, PorterStemmer):
     # print('process tweet function done')   ############### for debugging
     return tweet
 
+
 def tokeizeAndPad(cleaned_tweets,Tokenizer, pad_sequences):
   vocab_size = 10000
   embedding_dim = 16
@@ -69,6 +69,10 @@ def sarcasmPredictions(file_name,df,clean_tweets,tf, keras, Tokenizer, pad_seque
   json = open('SSK_SarcasmModel.json','r').read()
   modelSarcasm = model_from_json(json)
   
+  # load weights into new model
+  modelSarcasm.load_weights("C:\\Users\\muham\\OneDrive\\Desktop\\SentimentAnalysis\\backend\\WeightmodelSarcasm.h5")
+  # print("Loaded model from disk")
+  # json.close()
   
   tst_pad = tokeizeAndPad(clean_tweets,Tokenizer, pad_sequences)
   tst_pred = modelSarcasm.predict(tst_pad)
@@ -89,13 +93,15 @@ def sarcasmPredictions(file_name,df,clean_tweets,tf, keras, Tokenizer, pad_seque
   Sentimentdf = df[df['Sarcasm'] == 0]
   return Sentimentdf
 
-def sentimentPredictions(file_name,Sentimentdf,tf, keras, Tokenizer, pad_sequences, pd, np,model_from_json):
+def sentimentPredictions(file_name, Sentimentdf, tf, keras, Tokenizer, pad_sequences, pd, np,model_from_json):
   
   clean_tweets = list(Sentimentdf['text'])
   json = open('SSK_SentimentModel.json','r').read()
   modelSentiment = model_from_json(json)
-  
-  
+  modelSentiment.load_weights("C:\\Users\\muham\\OneDrive\\Desktop\\SentimentAnalysis\\backend\\WeightmodelSentiment.h5")
+  # json.close()
+
+
   tst_pad = tokeizeAndPad(clean_tweets,Tokenizer, pad_sequences)
   # print('this is the length of tst_seq',len(tst_pad))               for debugging
   tst_pred = modelSentiment.predict(tst_pad)
@@ -126,6 +132,7 @@ def Clean_tweets(test_data,re, string, stopwords, PorterStemmer):
 
 def sskPredictor(data, file_name):
   tf, keras, Tokenizer, pad_sequences, pd, np, model_from_json, re, string, stopwords, PorterStemmer, getcwd = library_importer()
+
   df = pd.read_csv(data)
   df = df.dropna(subset=['text'])
   df.drop_duplicates(subset ="text",keep = False, inplace = True)
@@ -135,4 +142,3 @@ def sskPredictor(data, file_name):
   Sentimentdf = sarcasmPredictions(file_name,df,clean_tweets,tf, keras, Tokenizer, pad_sequences, pd, np,model_from_json)
   sentimentPredictions(file_name,Sentimentdf,tf, keras, Tokenizer, pad_sequences, pd, np,model_from_json)
   print('its working bubbles :)')     #for debugging
-

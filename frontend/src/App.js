@@ -12,6 +12,10 @@ import ProtectedRoute from "./ProtectedRoute";
 import Scrapper from "./containers/Scrapper";
 import Models from "./containers/models";
 import adminProfile from "./containers/adminProfile";
+import LoadingUser from "./containers/loadingUser";
+import DashboardUser from './clientSide/DashboardUser'
+import Home from "./containers/Home";
+import FrontPage from "./containers/FrontPage";
 
 function App() {
   return (
@@ -19,6 +23,8 @@ function App() {
       <Router>
         <Layout>
           <Switch>
+            <Route exact path="/" component={FrontPage} />
+            <Route exact path="/home" component={Home} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/activate/:uid/:token" component={Activate} />
             <Route exact path="/login" component={Login} />
@@ -26,6 +32,8 @@ function App() {
             <ProtectedRoute exact path="/Profile" component={adminProfile} />
             <ProtectedRoute exact path="/scrapper" component={Scrapper} />
             <ProtectedRoute exact path="/models" component={Models} />
+            <ProtectedRoute exact path="/userDashboard" component={DashboardUser} />
+            <ProtectedRoute exact path="/loadingUser" component={LoadingUser} />
             <Route exact path="/reset-password" component={ResetPassword} />
             <Route exact path='/password/reset/confirm/:uid/:token' component={ResetPasswordConfirm} />
           </Switch>

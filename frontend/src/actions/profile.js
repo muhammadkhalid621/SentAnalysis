@@ -1,12 +1,12 @@
 import axios from 'axios';
 import {
-    USER_LOADED_SUCCESS,
-    USER_LOADED_FAIL,
+    USER_PROFILE_SUCCESS,
+    USER_PROFILE_FAIL,
     UPDATE_USER_PROFILE_FAIL,
     UPDATE_USER_PROFILE_SUCCESS
 } from './types';
 
-export const load_user = () => async dispatch => {
+export const user_profile = () => async dispatch => {
     
     if (localStorage.getItem("access")) {
         
@@ -19,16 +19,16 @@ export const load_user = () => async dispatch => {
         }; 
 
         try {
-            const res = await axios.get(`/accounts/users/me/`, config);
+            const res = await axios.get(`/accounts/profile/`, config);
             console.log('loading',res.data)
     
             dispatch({
-                type: USER_LOADED_SUCCESS,
+                type: USER_PROFILE_SUCCESS,
                 payload: res.data
             });
         } catch (error) {
             dispatch({
-                type: USER_LOADED_FAIL,
+                type: USER_PROFILE_FAIL,
                 payload: error.response && error.response.data.detail
                 ? error.response.data.detail
                 : error.message,
@@ -37,7 +37,7 @@ export const load_user = () => async dispatch => {
         }
     } else {
         dispatch({
-            type: USER_LOADED_FAIL
+            type: USER_PROFILE_FAIL
         });
     }
 };

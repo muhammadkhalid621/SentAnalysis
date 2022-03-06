@@ -11,12 +11,8 @@ def libraries():
 
 def sarcasmData():
   import json
-  
-#   !wget --no-check-certificate \
-#     https://storage.googleapis.com/laurencemoroney-blog.appspot.com/sarcasm.json \
-#     -O /tmp/sarcasm.json
 
-  with open("C:/Users/muham/OneDrive/Desktop/sentAnalysis/backend/sarcasm.json", 'r') as f:
+  with open("C:/Users/muham/OneDrive/Desktop/SentimentAnalysis/backend/sarcasm.json", 'r') as f:
     datastore = json.load(f)
 
   sentences = []
@@ -79,7 +75,9 @@ def sarcasmModel(sentences, labels,vocab_size,embedding_dim,max_length,trunc_typ
   json = modelSarcasm.to_json()
   with open("SSK_SarcasmModel.json","w") as json_file:
     json_file.write(json)
+  modelSarcasm.save_weights("WeightmodelSarcasm.h5")
   json_file.close()
+
 
 def sentimentData(dataset):
   import pandas as pd
@@ -145,12 +143,14 @@ def sentimentModel(training_sentences,training_labels,vocab_size,embedding_dim,m
   json = modelSentiment.to_json()
   with open("SSK_SentimentModel.json","w") as json_file:
     json_file.write(json)
+  modelSentiment.save_weights("WeightmodelSentiment.h5")
   json_file.close()
+
 
 def modelTrainers(dataset,Svocab_size=10000,Sembedding_dim=16,Smax_length=100,Strunc_type='post',Spadding_type='post',Soov_tok="<OOV>",Snum_epochs=1,
                   vocab_size=10000,embedding_dim=16,max_length=100,trunc_type='post',padding_type='post',oov_tok="<OOV>",num_epochs=3
                   ):
-  print('start training')
+  
   sentences, labels, urls = sarcasmData()
   modelSarcasm = sarcasmModel(sentences, labels,Svocab_size,Sembedding_dim,Smax_length,Strunc_type,Spadding_type,Soov_tok,Snum_epochs)
   training_sentences,training_labels = sentimentData(dataset) 

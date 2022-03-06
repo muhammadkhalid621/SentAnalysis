@@ -3,6 +3,7 @@ import uuid
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
 from django.core.exceptions import ValidationError
 from django.conf import settings
+from datetime import date
 
 class UserAccountManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):
@@ -41,9 +42,9 @@ class UserAccount(AbstractBaseUser, PermissionsMixin):
     user_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     email = models.EmailField(verbose_name="email", max_length=255, unique=True)
     username = models.CharField(max_length=50, unique=True)
-    number = models.BigIntegerField(unique=True, blank=True, null=True)
-    gender = models.CharField(max_length=50, choices=gender, blank=True, null=True)
-    dob = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    number = models.BigIntegerField(unique=True)
+    gender = models.CharField(max_length=50, choices=gender)
+    dob = models.DateField(default=date.today, editable=True)
     image = models.ImageField()
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
@@ -52,7 +53,7 @@ class UserAccount(AbstractBaseUser, PermissionsMixin):
     objects = UserAccountManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username', 'gender','number','image']
+    REQUIRED_FIELDS = ['username', 'gender','number', 'image']
 
     
     
@@ -68,9 +69,11 @@ class userProfile(models.Model):
     user=models.OneToOneField(User,on_delete=models.CASCADE,related_name="profile")
     email = models.EmailField(verbose_name="email", max_length=255, unique=True)
     username = models.CharField(max_length=50, unique=True)
-    number = models.BigIntegerField(unique=True, blank=True, null=True)
-    gender = models.CharField(max_length=50, choices=gender, blank=True, null=True)
-    dob = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    number = models.BigIntegerField(unique=True)
+    gender = models.CharField(max_length=50, choices=gender)
+    dob = models.DateField(auto_now_add=True)
+    image = models.ImageField()
+    is_staff = models.BooleanField(default=False)
     updated_on=models.DateTimeField(auto_now=True)
 
     def __str__(self):

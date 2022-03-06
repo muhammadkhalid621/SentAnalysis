@@ -6,6 +6,7 @@ from rest_framework.response import Response
 from rest_framework.parsers import MultiPartParser, FormParser
 from .SSKModelGeneraterModule import modelTrainers
 from .PredictionModuleAdminClient import sskPredictor
+from .ReportAnalysis import generateReport
 from .locationModule import mapCreator
 import csv
 import json
@@ -32,7 +33,8 @@ def ModelRunView(request):
 
     if data['option'] == 'Prediction':
         sskPredictor(csv_file, csv_file_name)
-        mapCreator(csv_file_name.split('.')[0]+'_Sentiments.csv',csv_file_name)
+        # mapCreator(csv_file_name.split('.')[0]+'_Sentiments.csv',csv_file_name)
+        generateReport(csv_file_name.split('.')[0]+'_Sentiments.csv', data['username'], csv_file_name.split('.')[0], data['email'])
     
     if serializer.is_valid():
         

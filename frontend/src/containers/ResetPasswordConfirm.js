@@ -3,7 +3,7 @@ import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { reset_password_confirm } from "../actions/auth";
 import { Form, Row, Col, Button, Container } from "react-bootstrap";
-import uiImg from "../images/login.jpg";
+import uiImg from "../images/login.svg";
 import "../css/signup.css";
 
 const ResetPasswordConfirm = ({ match, reset_password_confirm }) => {
@@ -60,7 +60,7 @@ const ResetPasswordConfirm = ({ match, reset_password_confirm }) => {
       <Container className="mt-1">
         <Row>
           <Col lg={8} md={8} sm={12}>
-            <img className="w-100" src={uiImg} alt="" />
+            <img className="w-100 mt-5" src={uiImg} alt="" />
           </Col>
           <Col lg={4} md={8} sm={14} className="mt-1 p-0">
             {/* <img className="icon-img" src={loginIcon} alt="icon" /> */}
@@ -69,7 +69,7 @@ const ResetPasswordConfirm = ({ match, reset_password_confirm }) => {
             </h1>
             <h1 className="mt-5 d-flex justify-content-center">Welcome User</h1>
             <Form onSubmit={onSubmit}>
-              <Form.Group className="mb-0" controlId="formGroupPassword">
+              <Form.Group className="mb-0 mt-3" controlId="formGroupPassword">
                 <Form.Label>Password</Form.Label>
                 <Form.Control
                   name="new_password"
@@ -106,7 +106,7 @@ const ResetPasswordConfirm = ({ match, reset_password_confirm }) => {
               </div>
 
               <div className="back">
-                <a href="/">Back To Site</a>
+                <a href="/home">Back To Site</a>
               </div>
             </Form>
           </Col>

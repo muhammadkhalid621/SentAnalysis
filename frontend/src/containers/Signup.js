@@ -3,10 +3,10 @@ import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { signup } from "../actions/auth";
 import { Form, Row, Col, Button, Container } from "react-bootstrap";
-import uiImg from "../images/login.jpg";
+import uiImg from "../images/login.svg";
 import "../css/signup.css";
 
-const Signup = ({ signup, isAuthenticated }) => {
+const Signup = ({ signup, isAuthenticated, django_error }) => {
   const regexp =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const [accountCreated, setAccountCreated] = useState(false);
@@ -71,7 +71,7 @@ const Signup = ({ signup, isAuthenticated }) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-
+    console.log(django_error)
     const newErrors = findErrors();
 
     if (Object.keys(newErrors).length > 0) {
@@ -117,20 +117,20 @@ const Signup = ({ signup, isAuthenticated }) => {
   // };
 
   if (isAuthenticated) {
-    return <Redirect to="/dashboard" />;
+    return <Redirect to="/loadingUser" />;
   }
-  if (accountCreated) {
-    return <Redirect to="/login" />;
-  }
+  // if (accountCreated) {
+  //   return <Redirect to="/login" />;
+  // }
 
   return (
     <>
       <Container className="mt-1">
         <Row>
-          <Col lg={6} md={7} sm={12}>
-            <img className="w-100" src={uiImg} alt="" />
+          <Col lg={8} md={7} sm={12}>
+            <img className=" mt-5 w-100" src={uiImg} alt="" />
           </Col>
-          <Col lg={6} md={6} sm={12} className="mt-1 p-0">
+          <Col lg={4} md={6} sm={12} className="mt-1 p-0">
             {/* <img className="icon-img" src={loginIcon} alt="icon" /> */}
             <h1 className="title">SSK Enterprise</h1>
             <Form onSubmit={onSubmit}>
@@ -215,7 +215,7 @@ const Signup = ({ signup, isAuthenticated }) => {
                     >
                       <option value="Gender">Select...</option>
                       <option value="Male">Male</option>
-                      <option value="Feale">Female</option>
+                      <option value="Female">Female</option>
                       <option value="Other">Other</option>
                     </Form.Control>
                     {errors.gender && (
@@ -263,7 +263,7 @@ const Signup = ({ signup, isAuthenticated }) => {
                 </span>
               </div>
               <div className="back">
-                <a href="/">Back To Site</a>
+                <a href="/home">Back To Site</a>
               </div>
             </Form>
           </Col>
@@ -275,6 +275,7 @@ const Signup = ({ signup, isAuthenticated }) => {
 
 const mapStateToProps = (state) => ({
   isAuthenticated: state.auth.isAuthenticated,
+  django_error: state.auth.error,
 });
 
 export default connect(mapStateToProps, { signup })(Signup);

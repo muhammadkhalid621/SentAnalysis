@@ -2,8 +2,8 @@ import {
   DELETE_USER_SUCCESS,
   UPDATE_USER_PROFILE_FAIL,
   UPDATE_USER_PROFILE_SUCCESS,
-  USER_LOADED_SUCCESS,
-  USER_LOADED_FAIL,
+  USER_PROFILE_SUCCESS,
+  USER_PROFILE_FAIL,
 } from "../actions/types";
 
 const initialState = {
@@ -15,12 +15,14 @@ const initialState = {
   plan: "",
   gender: "",
   dob: "",
+  image: "",
+  isAdmin: "",
 };
 export default function (state = initialState, action) {
   const { type, payload } = action;
 
   switch (type) {
-    case USER_LOADED_SUCCESS:
+    case USER_PROFILE_SUCCESS:
     // case UPDATE_USER_PROFILE_SUCCESS:
       return {
         ...state,
@@ -31,8 +33,10 @@ export default function (state = initialState, action) {
         plan: payload.plan,
         gender: payload.gender,
         dob: payload.dob,
+        image: payload.image,
+        isAdmin: payload.isAdmin,
       };
-    case USER_LOADED_FAIL:
+    case USER_PROFILE_FAIL:
       return {
         ...state,
         username: "",
@@ -43,6 +47,8 @@ export default function (state = initialState, action) {
         plan: "",
         gender: "",
         dob: "",
+        image: "",
+        isAdmin: "",
       };
     // case UPDATE_USER_PROFILE_FAIL:
     //   return {
