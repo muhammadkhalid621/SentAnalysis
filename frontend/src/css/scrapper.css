@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* scrapper start*/
+.content-scrapper {
+  /* background-color: white; */
+  width: 80%;
+  margin-top: 20px;
+  padding: 0px 10px;
+  position: absolute;
+  top: 70%;
+  left: 17%;
+}
+/*scrapper end */
+
+/* scrapper intro start */
+.content-scrapper .scrapper-intro {
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 5%;
+}
+
+.scrapper-intro h3 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.scrapper-intro p {
+  text-align: center;
+  padding: 0px 80px;
+  color: black;
+  font-weight: 500;
+  font-size: medium;
+}
+
+.scrapper-intro img {
+  width: 100px;
+  height: 100px;
+  float: right;
+  margin-top: -300px;
+  margin-right: -90px;
+  
+}
+
+/* scrapper intro end*/
+
+/* scrapper form start*/
+.content-scrapper .scrapper-search {
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 5%;
+  background-color: rgba(185, 192, 192, 0.425);
+  /* grid-row: 1 / 3; */
+}
+.scrapper-search .submit {
+  border-radius: 20px;
+  font-size: 25px;
+  margin-top: 20px;
+  margin:auto;
+  display:block
+}
+.scrapper-search  p{
+  margin-top: 10px;
+  font-size: 15px;
+}
+.scrapper-search .errorShow {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  color: red;
+}
+/*scrapper form end*/
+
+/* scrapper work start*/
+.content-scrapper .scrapper-work {
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 5%;
+}
+
+.scrapper-work h3 {
+  text-align: left;
+  font-weight: bold;
+}
+
+.scrapper-work p {
+  text-align: left;
+  margin-top: 10px;
+  align-self: right;
+  color: black;
+  font-weight: 500;
+  font-size: medium;
+}
+
+.scrapper-work img {
+  /* filter: brightness(80%); */
+  width: 300px;
+  height: 200px;
+  float: right;
+  margin-top: -60px;
+  margin-left: 5px;
+  
+}
+/* scrapper work end*/

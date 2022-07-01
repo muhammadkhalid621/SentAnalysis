@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_dc7b60f939b64b059fb2e33bb0f0f9c7 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_dc7b60f939b64b059fb2e33bb0f0f9c7" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_dc7b60f939b64b059fb2e33bb0f0f9c7 = L.map(
+        'map_dc7b60f939b64b059fb2e33bb0f0f9c7', {
+        center: [30.3753, 69.3451],
+        zoom: 1.3,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_b3c6536398fe49d894cd9b91ab559a17 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_dc7b60f939b64b059fb2e33bb0f0f9c7);
+    
+            var marker_cluster_1eb7485528d443efb13e51561746c711 = L.markerClusterGroup({});
+            map_dc7b60f939b64b059fb2e33bb0f0f9c7.addLayer(marker_cluster_1eb7485528d443efb13e51561746c711);
+            
+    
+        var marker_b83f94a45085422681bd0f29711b6224 = L.marker(
+            [22.8718892, -110.1194789],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_157e6b4d37d64c23a6fef061449eb3a6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_24be813068764b84bee6e8b05bcd4df6 = $(`<div id="html_24be813068764b84bee6e8b05bcd4df6" style="width: 100.0%; height: 100.0%;">user_name    propgod69 Sentiment            0 Name: 123, dtype: object</div>`)[0];
+                popup_157e6b4d37d64c23a6fef061449eb3a6.setContent(html_24be813068764b84bee6e8b05bcd4df6);
+            
+
+            marker_b83f94a45085422681bd0f29711b6224.bindPopup(popup_157e6b4d37d64c23a6fef061449eb3a6)
+            ;
+
+            
+        
+    
+        var marker_e665030b4e9740f9a19756c63fc1eed5 = L.marker(
+            [39.871811, -75.280284],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_a315af5f915a413ab2145ce758319254 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_89984731398a4921942dce72f41de72e = $(`<div id="html_89984731398a4921942dce72f41de72e" style="width: 100.0%; height: 100.0%;">user_name    DiamondHnds Sentiment              0 Name: 344, dtype: object</div>`)[0];
+                popup_a315af5f915a413ab2145ce758319254.setContent(html_89984731398a4921942dce72f41de72e);
+            
+
+            marker_e665030b4e9740f9a19756c63fc1eed5.bindPopup(popup_a315af5f915a413ab2145ce758319254)
+            ;
+
+            
+        
+    
+        var marker_e03f786589bc4116b9275b34714e8904 = L.marker(
+            [37.771743, -88.097892],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_1e6cade34edd4f3db87e08f9859ef196 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5a3dc7b31d5c417f9a9979aadf28d9ab = $(`<div id="html_5a3dc7b31d5c417f9a9979aadf28d9ab" style="width: 100.0%; height: 100.0%;">user_name    ThomasEDavis10 Sentiment                 1 Name: 649, dtype: object</div>`)[0];
+                popup_1e6cade34edd4f3db87e08f9859ef196.setContent(html_5a3dc7b31d5c417f9a9979aadf28d9ab);
+            
+
+            marker_e03f786589bc4116b9275b34714e8904.bindPopup(popup_1e6cade34edd4f3db87e08f9859ef196)
+            ;
+
+            
+        
+    
+        var marker_ad4a9a0989a24dba8fe3b327fc437c11 = L.marker(
+            [4.655208183101543, -74.00771123609681],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_7bc049a8d882407b87be5b9d269104ca = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e62f76645f9f4a2d880596d298889311 = $(`<div id="html_e62f76645f9f4a2d880596d298889311" style="width: 100.0%; height: 100.0%;">user_name    LylyanLy Sentiment           0 Name: 1116, dtype: object</div>`)[0];
+                popup_7bc049a8d882407b87be5b9d269104ca.setContent(html_e62f76645f9f4a2d880596d298889311);
+            
+
+            marker_ad4a9a0989a24dba8fe3b327fc437c11.bindPopup(popup_7bc049a8d882407b87be5b9d269104ca)
+            ;
+
+            
+        
+    
+        var marker_dee4e9628a5c458e872c4f1f8fc8c8d9 = L.marker(
+            [33.704538, -118.668404],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_b83b38404a464b0bab3773a1660f212f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a1f34efa9cb3482c93858e3b97873ae0 = $(`<div id="html_a1f34efa9cb3482c93858e3b97873ae0" style="width: 100.0%; height: 100.0%;">user_name    Orrala77Alex Sentiment               1 Name: 1501, dtype: object</div>`)[0];
+                popup_b83b38404a464b0bab3773a1660f212f.setContent(html_a1f34efa9cb3482c93858e3b97873ae0);
+            
+
+            marker_dee4e9628a5c458e872c4f1f8fc8c8d9.bindPopup(popup_b83b38404a464b0bab3773a1660f212f)
+            ;
+
+            
+        
+    
+        var marker_dd5337ea6c3a483a9232391cf084b597 = L.marker(
+            [29.522325, -95.823268],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_41a4bfd7e68041d99b2d116ee24be61a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9f83468ba5764fd6903826d633ff02c0 = $(`<div id="html_9f83468ba5764fd6903826d633ff02c0" style="width: 100.0%; height: 100.0%;">user_name    bridgenrg Sentiment            1 Name: 1516, dtype: object</div>`)[0];
+                popup_41a4bfd7e68041d99b2d116ee24be61a.setContent(html_9f83468ba5764fd6903826d633ff02c0);
+            
+
+            marker_dd5337ea6c3a483a9232391cf084b597.bindPopup(popup_41a4bfd7e68041d99b2d116ee24be61a)
+            ;
+
+            
+        
+    
+        var marker_5d377a5568904a469e72e6018651ac8d = L.marker(
+            [29.522325, -95.823268],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_82d94ee93d1e426088a372e4d7c3f672 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3c17ae49a39e4eb1af14ba16f529e51b = $(`<div id="html_3c17ae49a39e4eb1af14ba16f529e51b" style="width: 100.0%; height: 100.0%;">user_name    bridgenrg Sentiment            1 Name: 1517, dtype: object</div>`)[0];
+                popup_82d94ee93d1e426088a372e4d7c3f672.setContent(html_3c17ae49a39e4eb1af14ba16f529e51b);
+            
+
+            marker_5d377a5568904a469e72e6018651ac8d.bindPopup(popup_82d94ee93d1e426088a372e4d7c3f672)
+            ;
+
+            
+        
+    
+        var marker_08f51af4b92245719be314d1c684c433 = L.marker(
+            [25.628844, -80.3893437],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_c0bca619b47f4165ab202d8b5aa35585 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f28e1f835c5e4cdf96f39690f084f1ed = $(`<div id="html_f28e1f835c5e4cdf96f39690f084f1ed" style="width: 100.0%; height: 100.0%;">user_name    feliperus1110 Sentiment                0 Name: 1548, dtype: object</div>`)[0];
+                popup_c0bca619b47f4165ab202d8b5aa35585.setContent(html_f28e1f835c5e4cdf96f39690f084f1ed);
+            
+
+            marker_08f51af4b92245719be314d1c684c433.bindPopup(popup_c0bca619b47f4165ab202d8b5aa35585)
+            ;
+
+            
+        
+    
+        var marker_50a77749005543c78f3df278fbaf1aaa = L.marker(
+            [13.72873, -92.2273874],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_38807ce1aa0c4782878632803f9e72fd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_95853b8a75c64eaea77792e14a203a18 = $(`<div id="html_95853b8a75c64eaea77792e14a203a18" style="width: 100.0%; height: 100.0%;">user_name    IBEX_Mercado Sentiment               1 Name: 1799, dtype: object</div>`)[0];
+                popup_38807ce1aa0c4782878632803f9e72fd.setContent(html_95853b8a75c64eaea77792e14a203a18);
+            
+
+            marker_50a77749005543c78f3df278fbaf1aaa.bindPopup(popup_38807ce1aa0c4782878632803f9e72fd)
+            ;
+
+            
+        
+    
+        var marker_13d3682ccb0b4da08456c1b969aaa99f = L.marker(
+            [45.421863, -122.7900653],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_230547484dc64f008c8a659215f8aaa4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3ab2d2e686e64c74bb25ef1b78a331bc = $(`<div id="html_3ab2d2e686e64c74bb25ef1b78a331bc" style="width: 100.0%; height: 100.0%;">user_name    retconmike Sentiment             1 Name: 2091, dtype: object</div>`)[0];
+                popup_230547484dc64f008c8a659215f8aaa4.setContent(html_3ab2d2e686e64c74bb25ef1b78a331bc);
+            
+
+            marker_13d3682ccb0b4da08456c1b969aaa99f.bindPopup(popup_230547484dc64f008c8a659215f8aaa4)
+            ;
+
+            
+        
+    
+        var marker_dab165992bb1425088290a1406ab9b77 = L.marker(
+            [44.386383, 22.1357201],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_76772a2a8bae459eb73bc50a8e01d1a4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_37bdc4970048411a949600552a349ae8 = $(`<div id="html_37bdc4970048411a949600552a349ae8" style="width: 100.0%; height: 100.0%;">user_name    ViacheslavHalk1 Sentiment                  1 Name: 2260, dtype: object</div>`)[0];
+                popup_76772a2a8bae459eb73bc50a8e01d1a4.setContent(html_37bdc4970048411a949600552a349ae8);
+            
+
+            marker_dab165992bb1425088290a1406ab9b77.bindPopup(popup_76772a2a8bae459eb73bc50a8e01d1a4)
+            ;
+
+            
+        
+    
+        var marker_0bae093d5f0a42dda4560d58b75f6b4d = L.marker(
+            [35.002086, -120.00574],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_e8d4903127694169a6aeec3f103bd86e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_68161915b9a843beb811930b24214272 = $(`<div id="html_68161915b9a843beb811930b24214272" style="width: 100.0%; height: 100.0%;">user_name    cdrcrypto69 Sentiment              0 Name: 2331, dtype: object</div>`)[0];
+                popup_e8d4903127694169a6aeec3f103bd86e.setContent(html_68161915b9a843beb811930b24214272);
+            
+
+            marker_0bae093d5f0a42dda4560d58b75f6b4d.bindPopup(popup_e8d4903127694169a6aeec3f103bd86e)
+            ;
+
+            
+        
+    
+        var marker_8c82ee46c486437f89e49ac8b712af3e = L.marker(
+            [51.6275841, -3.25205],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_e28c239558c64779b66f8a56411ef081 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_31dc99a70fd9431f9442354cad593d07 = $(`<div id="html_31dc99a70fd9431f9442354cad593d07" style="width: 100.0%; height: 100.0%;">user_name    ValleyStacker Sentiment                1 Name: 2412, dtype: object</div>`)[0];
+                popup_e28c239558c64779b66f8a56411ef081.setContent(html_31dc99a70fd9431f9442354cad593d07);
+            
+
+            marker_8c82ee46c486437f89e49ac8b712af3e.bindPopup(popup_e28c239558c64779b66f8a56411ef081)
+            ;
+
+            
+        
+    
+        var marker_fb82d4c6d4414201af1ddd874481dd17 = L.marker(
+            [17.7057855, -78.3688776],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_1e9e4945e47246b98df75e57e7486bf9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8e6d849fdc5d43fb815b4698139c6c36 = $(`<div id="html_8e6d849fdc5d43fb815b4698139c6c36" style="width: 100.0%; height: 100.0%;">user_name    RowanBa61286998 Sentiment                  0 Name: 2455, dtype: object</div>`)[0];
+                popup_1e9e4945e47246b98df75e57e7486bf9.setContent(html_8e6d849fdc5d43fb815b4698139c6c36);
+            
+
+            marker_fb82d4c6d4414201af1ddd874481dd17.bindPopup(popup_1e9e4945e47246b98df75e57e7486bf9)
+            ;
+
+            
+        
+    
+        var marker_321cefd9610545d185fda01195709cd5 = L.marker(
+            [39.12466, -77.31732],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_d12115e44c8d4774b001afa679fff744 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b5d09ef89f7b41fea3a5af1908651321 = $(`<div id="html_b5d09ef89f7b41fea3a5af1908651321" style="width: 100.0%; height: 100.0%;">user_name    Rainbird42true Sentiment                 0 Name: 2476, dtype: object</div>`)[0];
+                popup_d12115e44c8d4774b001afa679fff744.setContent(html_b5d09ef89f7b41fea3a5af1908651321);
+            
+
+            marker_321cefd9610545d185fda01195709cd5.bindPopup(popup_d12115e44c8d4774b001afa679fff744)
+            ;
+
+            
+        
+    
+        var marker_9d57ef87ea4f4169b37839e662a4f644 = L.marker(
+            [39.871811, -75.280284],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_5e46d76159d74a868dc0b19201d6b238 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_19e316e3db2e48e79992662d1babb699 = $(`<div id="html_19e316e3db2e48e79992662d1babb699" style="width: 100.0%; height: 100.0%;">user_name    Frishkoa718 Sentiment              0 Name: 2619, dtype: object</div>`)[0];
+                popup_5e46d76159d74a868dc0b19201d6b238.setContent(html_19e316e3db2e48e79992662d1babb699);
+            
+
+            marker_9d57ef87ea4f4169b37839e662a4f644.bindPopup(popup_5e46d76159d74a868dc0b19201d6b238)
+            ;
+
+            
+        
+    
+        var marker_9151ba6048f14f46a4746f62c36958ab = L.marker(
+            [40.970454, -80.71159],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_aa0b7ca8fd3b4adc86ad2d76da933a80 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a1e5dde4873e49c4b5e2396f9d78b153 = $(`<div id="html_a1e5dde4873e49c4b5e2396f9d78b153" style="width: 100.0%; height: 100.0%;">user_name    WayneUlery Sentiment             0 Name: 2965, dtype: object</div>`)[0];
+                popup_aa0b7ca8fd3b4adc86ad2d76da933a80.setContent(html_a1e5dde4873e49c4b5e2396f9d78b153);
+            
+
+            marker_9151ba6048f14f46a4746f62c36958ab.bindPopup(popup_aa0b7ca8fd3b4adc86ad2d76da933a80)
+            ;
+
+            
+        
+    
+        var marker_58f69327d35c4d5d853b56334c825f09 = L.marker(
+            [-34.674453, -58.5317922],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_8f3a066caf524fb1b75906c49dd92ec9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_78c358dcf6dc453da8cdc19f8cc794b1 = $(`<div id="html_78c358dcf6dc453da8cdc19f8cc794b1" style="width: 100.0%; height: 100.0%;">user_name    ValorDolarBtc Sentiment                0 Name: 3021, dtype: object</div>`)[0];
+                popup_8f3a066caf524fb1b75906c49dd92ec9.setContent(html_78c358dcf6dc453da8cdc19f8cc794b1);
+            
+
+            marker_58f69327d35c4d5d853b56334c825f09.bindPopup(popup_8f3a066caf524fb1b75906c49dd92ec9)
+            ;
+
+            
+        
+    
+        var marker_3f45a560d6a44371a21236f0ab754408 = L.marker(
+            [-23.08302, -43.795449],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_7b496ec1e1af40c891ddc447ded5518e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_910b359cb7034d3398a801438e408dc7 = $(`<div id="html_910b359cb7034d3398a801438e408dc7" style="width: 100.0%; height: 100.0%;">user_name    jc87529 Sentiment          1 Name: 3140, dtype: object</div>`)[0];
+                popup_7b496ec1e1af40c891ddc447ded5518e.setContent(html_910b359cb7034d3398a801438e408dc7);
+            
+
+            marker_3f45a560d6a44371a21236f0ab754408.bindPopup(popup_7b496ec1e1af40c891ddc447ded5518e)
+            ;
+
+            
+        
+    
+        var marker_7bed455c00a64aba958e3c97a359cf6c = L.marker(
+            [29.748620833774513, -95.35595930605157],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_ea3bf82ec896494993c8d12f55536562 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_04b7e2caa77944a5a72d8f03ef7f9b27 = $(`<div id="html_04b7e2caa77944a5a72d8f03ef7f9b27" style="width: 100.0%; height: 100.0%;">user_name    PenniferJett Sentiment               0 Name: 3238, dtype: object</div>`)[0];
+                popup_ea3bf82ec896494993c8d12f55536562.setContent(html_04b7e2caa77944a5a72d8f03ef7f9b27);
+            
+
+            marker_7bed455c00a64aba958e3c97a359cf6c.bindPopup(popup_ea3bf82ec896494993c8d12f55536562)
+            ;
+
+            
+        
+    
+        var marker_db0c98db693747e9a31214bcc780f59b = L.marker(
+            [40.683935, -74.026675],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_328dced348f047ae84a5a78306ca381d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_af9f0dc19f3947c88a942a45836f7a3c = $(`<div id="html_af9f0dc19f3947c88a942a45836f7a3c" style="width: 100.0%; height: 100.0%;">user_name    RomainBTC Sentiment            0 Name: 3295, dtype: object</div>`)[0];
+                popup_328dced348f047ae84a5a78306ca381d.setContent(html_af9f0dc19f3947c88a942a45836f7a3c);
+            
+
+            marker_db0c98db693747e9a31214bcc780f59b.bindPopup(popup_328dced348f047ae84a5a78306ca381d)
+            ;
+
+            
+        
+    
+        var marker_737a10d006e44d969ea7c1dc73a79467 = L.marker(
+            [6.4826762, 3.198942],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_1c5dbb24e65f4986a3d62f20c1c33395 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3ab6e76dca1f42d6a0ef73ed9569d239 = $(`<div id="html_3ab6e76dca1f42d6a0ef73ed9569d239" style="width: 100.0%; height: 100.0%;">user_name    CupidTechhq Sentiment              1 Name: 3423, dtype: object</div>`)[0];
+                popup_1c5dbb24e65f4986a3d62f20c1c33395.setContent(html_3ab6e76dca1f42d6a0ef73ed9569d239);
+            
+
+            marker_737a10d006e44d969ea7c1dc73a79467.bindPopup(popup_1c5dbb24e65f4986a3d62f20c1c33395)
+            ;
+
+            
+        
+    
+        var marker_bb6c7f85d7c5441ab7ff5f4a64d86571 = L.marker(
+            [44.8960663, 25.9177547],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_135d789ef19a4b0eb9361c4344c6c2af = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_413ddd20c1fa4588aa43af7cc56f3d15 = $(`<div id="html_413ddd20c1fa4588aa43af7cc56f3d15" style="width: 100.0%; height: 100.0%;">user_name    Uivlis111 Sentiment            0 Name: 3945, dtype: object</div>`)[0];
+                popup_135d789ef19a4b0eb9361c4344c6c2af.setContent(html_413ddd20c1fa4588aa43af7cc56f3d15);
+            
+
+            marker_bb6c7f85d7c5441ab7ff5f4a64d86571.bindPopup(popup_135d789ef19a4b0eb9361c4344c6c2af)
+            ;
+
+            
+        
+    
+        var marker_c0796f8a9aea48d0a674f208f3e22487 = L.marker(
+            [29.522325, -95.823268],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_f22efdf970e44d2aba94b02759f398cb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_42f80a0a5e3b4346b1695bec13bbfaba = $(`<div id="html_42f80a0a5e3b4346b1695bec13bbfaba" style="width: 100.0%; height: 100.0%;">user_name    bmsbreaux Sentiment            0 Name: 4007, dtype: object</div>`)[0];
+                popup_f22efdf970e44d2aba94b02759f398cb.setContent(html_42f80a0a5e3b4346b1695bec13bbfaba);
+            
+
+            marker_c0796f8a9aea48d0a674f208f3e22487.bindPopup(popup_f22efdf970e44d2aba94b02759f398cb)
+            ;
+
+            
+        
+    
+        var marker_46094149bbca44ccad38a5d18872bea1 = L.marker(
+            [48.8155214, 2.2241006],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_8f4da16ada5d4f0baa517ee1f7d6bf0a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_705aea06201e4765940448a15e7bcdbd = $(`<div id="html_705aea06201e4765940448a15e7bcdbd" style="width: 100.0%; height: 100.0%;">user_name    Adrian_Sauzade Sentiment                 0 Name: 4029, dtype: object</div>`)[0];
+                popup_8f4da16ada5d4f0baa517ee1f7d6bf0a.setContent(html_705aea06201e4765940448a15e7bcdbd);
+            
+
+            marker_46094149bbca44ccad38a5d18872bea1.bindPopup(popup_8f4da16ada5d4f0baa517ee1f7d6bf0a)
+            ;
+
+            
+        
+    
+        var marker_76c05a36614546de85926d6a9c30b420 = L.marker(
+            [52.338079, 13.088304],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_1f82ab13049d4e9982e65a107f9d4ae8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7a4617e0b9b4412ca549648cd09452f9 = $(`<div id="html_7a4617e0b9b4412ca549648cd09452f9" style="width: 100.0%; height: 100.0%;">user_name    moenk Sentiment        0 Name: 4178, dtype: object</div>`)[0];
+                popup_1f82ab13049d4e9982e65a107f9d4ae8.setContent(html_7a4617e0b9b4412ca549648cd09452f9);
+            
+
+            marker_76c05a36614546de85926d6a9c30b420.bindPopup(popup_1f82ab13049d4e9982e65a107f9d4ae8)
+            ;
+
+            
+        
+    
+        var marker_95d01c8e386b4abab18f761906cf7c26 = L.marker(
+            [31.072626179231072, -97.66856020893279],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_8d4a97d72d5641f5853a74e213627783 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f30ba59cfb8044d793c03b33f463873b = $(`<div id="html_f30ba59cfb8044d793c03b33f463873b" style="width: 100.0%; height: 100.0%;">user_name    texasbtepqueen Sentiment                 0 Name: 4440, dtype: object</div>`)[0];
+                popup_8d4a97d72d5641f5853a74e213627783.setContent(html_f30ba59cfb8044d793c03b33f463873b);
+            
+
+            marker_95d01c8e386b4abab18f761906cf7c26.bindPopup(popup_8d4a97d72d5641f5853a74e213627783)
+            ;
+
+            
+        
+    
+        var marker_2c23598fbc55416e977dcf3681dd2c69 = L.marker(
+            [-35.348970061, 138.44212992],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_edaff78518904e8cacd3cfade158b803 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1eabbc7fe1984b3eba4342e6f5cb1be0 = $(`<div id="html_1eabbc7fe1984b3eba4342e6f5cb1be0" style="width: 100.0%; height: 100.0%;">user_name    DunkenKBliths Sentiment                1 Name: 4966, dtype: object</div>`)[0];
+                popup_edaff78518904e8cacd3cfade158b803.setContent(html_1eabbc7fe1984b3eba4342e6f5cb1be0);
+            
+
+            marker_2c23598fbc55416e977dcf3681dd2c69.bindPopup(popup_edaff78518904e8cacd3cfade158b803)
+            ;
+
+            
+        
+    
+        var marker_b803ff8df94b465facc04e3439523cd9 = L.marker(
+            [25.201793, 55.270776],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_a5bbafee7e2a47d8b2a26df203f1767e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4891438c1f794dc59ce358242df0e66a = $(`<div id="html_4891438c1f794dc59ce358242df0e66a" style="width: 100.0%; height: 100.0%;">user_name    Eunicedwong Sentiment              1 Name: 4980, dtype: object</div>`)[0];
+                popup_a5bbafee7e2a47d8b2a26df203f1767e.setContent(html_4891438c1f794dc59ce358242df0e66a);
+            
+
+            marker_b803ff8df94b465facc04e3439523cd9.bindPopup(popup_a5bbafee7e2a47d8b2a26df203f1767e)
+            ;
+
+            
+        
+    
+        var marker_de0cab555be64b8c8fabebfe508eb097 = L.marker(
+            [7.20386, -83.051445],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_0cb4ba11afc34b4c9cbce5a0edbf3dfd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4e3fde52b63342438817d7add3c01ca1 = $(`<div id="html_4e3fde52b63342438817d7add3c01ca1" style="width: 100.0%; height: 100.0%;">user_name    RandyHilarski Sentiment                1 Name: 5221, dtype: object</div>`)[0];
+                popup_0cb4ba11afc34b4c9cbce5a0edbf3dfd.setContent(html_4e3fde52b63342438817d7add3c01ca1);
+            
+
+            marker_de0cab555be64b8c8fabebfe508eb097.bindPopup(popup_0cb4ba11afc34b4c9cbce5a0edbf3dfd)
+            ;
+
+            
+        
+    
+        var marker_f63fa1192c1b46159384a4bc7a99877a = L.marker(
+            [27.694323, -82.758209],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_32cbfe88e75b473889127e4aa1308b4f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_564b25286d2340c18b4f39e895e4bf20 = $(`<div id="html_564b25286d2340c18b4f39e895e4bf20" style="width: 100.0%; height: 100.0%;">user_name    Gios_typos Sentiment             0 Name: 5342, dtype: object</div>`)[0];
+                popup_32cbfe88e75b473889127e4aa1308b4f.setContent(html_564b25286d2340c18b4f39e895e4bf20);
+            
+
+            marker_f63fa1192c1b46159384a4bc7a99877a.bindPopup(popup_32cbfe88e75b473889127e4aa1308b4f)
+            ;
+
+            
+        
+    
+        var marker_84ce50ad84194bb2aff5d0b2d2a62df2 = L.marker(
+            [37.8990976, 40.149462],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_78d212e47eb14a349fa575a257d5fba3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_70b000cd66d6438db8ba007092975427 = $(`<div id="html_70b000cd66d6438db8ba007092975427" style="width: 100.0%; height: 100.0%;">user_name    rmzbrn Sentiment         0 Name: 5485, dtype: object</div>`)[0];
+                popup_78d212e47eb14a349fa575a257d5fba3.setContent(html_70b000cd66d6438db8ba007092975427);
+            
+
+            marker_84ce50ad84194bb2aff5d0b2d2a62df2.bindPopup(popup_78d212e47eb14a349fa575a257d5fba3)
+            ;
+
+            
+        
+    
+        var marker_9a49597d0d954204ab27a169e4790dd6 = L.marker(
+            [52.381063, -2.033651],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_b7d790eb89274a748896c3f6c4122dee = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2defe979e90a4a1287b3a642c04d8029 = $(`<div id="html_2defe979e90a4a1287b3a642c04d8029" style="width: 100.0%; height: 100.0%;">user_name    CP_INVESTOR500 Sentiment                 0 Name: 5547, dtype: object</div>`)[0];
+                popup_b7d790eb89274a748896c3f6c4122dee.setContent(html_2defe979e90a4a1287b3a642c04d8029);
+            
+
+            marker_9a49597d0d954204ab27a169e4790dd6.bindPopup(popup_b7d790eb89274a748896c3f6c4122dee)
+            ;
+
+            
+        
+    
+        var marker_23aa224c5f4e49b9b49d232f01cb0c52 = L.marker(
+            [38.789907, -77.144435],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_4e8082fcd0e445cabab99378aea21c73 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b8d9de6aa8664dc4879ef858e36f5317 = $(`<div id="html_b8d9de6aa8664dc4879ef858e36f5317" style="width: 100.0%; height: 100.0%;">user_name    NathanCPerry Sentiment               0 Name: 6043, dtype: object</div>`)[0];
+                popup_4e8082fcd0e445cabab99378aea21c73.setContent(html_b8d9de6aa8664dc4879ef858e36f5317);
+            
+
+            marker_23aa224c5f4e49b9b49d232f01cb0c52.bindPopup(popup_4e8082fcd0e445cabab99378aea21c73)
+            ;
+
+            
+        
+    
+        var marker_cc82509736424b589e3abea8c767578a = L.marker(
+            [38.789907, -77.144435],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_3367b92d553145d6a529a7420de876c5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_486e102f27ec4942a8fd0485a43e0ebf = $(`<div id="html_486e102f27ec4942a8fd0485a43e0ebf" style="width: 100.0%; height: 100.0%;">user_name    NathanCPerry Sentiment               0 Name: 6069, dtype: object</div>`)[0];
+                popup_3367b92d553145d6a529a7420de876c5.setContent(html_486e102f27ec4942a8fd0485a43e0ebf);
+            
+
+            marker_cc82509736424b589e3abea8c767578a.bindPopup(popup_3367b92d553145d6a529a7420de876c5)
+            ;
+
+            
+        
+    
+        var marker_70e07144dbef4ae08a2ef26a2c3d6969 = L.marker(
+            [31.06989213000918, -97.67384730042087],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_4ea47c4c991546cea414dfcbfe7b7541 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_356192e8512647abbfc4d8867ae7e8e6 = $(`<div id="html_356192e8512647abbfc4d8867ae7e8e6" style="width: 100.0%; height: 100.0%;">user_name    texasbtepqueen Sentiment                 0 Name: 6071, dtype: object</div>`)[0];
+                popup_4ea47c4c991546cea414dfcbfe7b7541.setContent(html_356192e8512647abbfc4d8867ae7e8e6);
+            
+
+            marker_70e07144dbef4ae08a2ef26a2c3d6969.bindPopup(popup_4ea47c4c991546cea414dfcbfe7b7541)
+            ;
+
+            
+        
+    
+        var marker_4dbb9c853af743b98ac7e1dcb76b936b = L.marker(
+            [-39.1591895298437, 140.961681976682],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_2e0765f89c034443b99f90b1d38df0ce = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7b49d72ede184f998e2ba4e30957fb15 = $(`<div id="html_7b49d72ede184f998e2ba4e30957fb15" style="width: 100.0%; height: 100.0%;">user_name    cosgunhuseyin06 Sentiment                  0 Name: 6161, dtype: object</div>`)[0];
+                popup_2e0765f89c034443b99f90b1d38df0ce.setContent(html_7b49d72ede184f998e2ba4e30957fb15);
+            
+
+            marker_4dbb9c853af743b98ac7e1dcb76b936b.bindPopup(popup_2e0765f89c034443b99f90b1d38df0ce)
+            ;
+
+            
+        
+    
+        var marker_1146d703205d425596f3b114fd8dcf7c = L.marker(
+            [13.149692000065, -90.1286629998777],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_f16ba8ad790246d3a443264b7e856d9c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c5cac591b25645eb93d5ec8fd7038ad5 = $(`<div id="html_c5cac591b25645eb93d5ec8fd7038ad5" style="width: 100.0%; height: 100.0%;">user_name    CryptoK_BTC Sentiment              0 Name: 6415, dtype: object</div>`)[0];
+                popup_f16ba8ad790246d3a443264b7e856d9c.setContent(html_c5cac591b25645eb93d5ec8fd7038ad5);
+            
+
+            marker_1146d703205d425596f3b114fd8dcf7c.bindPopup(popup_f16ba8ad790246d3a443264b7e856d9c)
+            ;
+
+            
+        
+    
+        var marker_503f3702d89843cab540017a5faf56d1 = L.marker(
+            [-34.8342468, 16.4475932],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_528eaf9c547845178e904d9ead23eed9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ce8299d0138245d69b7041ba85fbf25d = $(`<div id="html_ce8299d0138245d69b7041ba85fbf25d" style="width: 100.0%; height: 100.0%;">user_name    GaboWaLekhosi Sentiment                0 Name: 6655, dtype: object</div>`)[0];
+                popup_528eaf9c547845178e904d9ead23eed9.setContent(html_ce8299d0138245d69b7041ba85fbf25d);
+            
+
+            marker_503f3702d89843cab540017a5faf56d1.bindPopup(popup_528eaf9c547845178e904d9ead23eed9)
+            ;
+
+            
+        
+    
+        var marker_be10a29fd5714d8cbeeb4ce07d92ad7c = L.marker(
+            [38.789907, -77.144435],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_13dd385eee5444b7b00f5088fdf44ac6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6de1c3ba909a4be48f2fb36596be8648 = $(`<div id="html_6de1c3ba909a4be48f2fb36596be8648" style="width: 100.0%; height: 100.0%;">user_name    NathanCPerry Sentiment               1 Name: 6779, dtype: object</div>`)[0];
+                popup_13dd385eee5444b7b00f5088fdf44ac6.setContent(html_6de1c3ba909a4be48f2fb36596be8648);
+            
+
+            marker_be10a29fd5714d8cbeeb4ce07d92ad7c.bindPopup(popup_13dd385eee5444b7b00f5088fdf44ac6)
+            ;
+
+            
+        
+    
+        var marker_f1264cff19054f1b9f8ccc1f9a7993fe = L.marker(
+            [-45.367566, 168.116395],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_9e439db687f6495c9d2c35b611b648d0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9639daa074df416d8a1ebd7ef1cd813c = $(`<div id="html_9639daa074df416d8a1ebd7ef1cd813c" style="width: 100.0%; height: 100.0%;">user_name    OndoreVillager Sentiment                 1 Name: 6850, dtype: object</div>`)[0];
+                popup_9e439db687f6495c9d2c35b611b648d0.setContent(html_9639daa074df416d8a1ebd7ef1cd813c);
+            
+
+            marker_f1264cff19054f1b9f8ccc1f9a7993fe.bindPopup(popup_9e439db687f6495c9d2c35b611b648d0)
+            ;
+
+            
+        
+    
+        var marker_39d18b66275c49a0a5644251410317de = L.marker(
+            [26.642291, 80.658613],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_de4cbed6f4f94c3b963d192a5f714756 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_048f14ae7226460f9df52be3dba92641 = $(`<div id="html_048f14ae7226460f9df52be3dba92641" style="width: 100.0%; height: 100.0%;">user_name    MohdTan62157805 Sentiment                  1 Name: 6872, dtype: object</div>`)[0];
+                popup_de4cbed6f4f94c3b963d192a5f714756.setContent(html_048f14ae7226460f9df52be3dba92641);
+            
+
+            marker_39d18b66275c49a0a5644251410317de.bindPopup(popup_de4cbed6f4f94c3b963d192a5f714756)
+            ;
+
+            
+        
+    
+        var marker_98d7c554f3cc4c4e92d9bcc2936a9f16 = L.marker(
+            [33.054742, 35.0757711],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_4fb4be93f93b4857b0291500ef4c3eff = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3c00121d521c497ba5694a38d04cbe24 = $(`<div id="html_3c00121d521c497ba5694a38d04cbe24" style="width: 100.0%; height: 100.0%;">user_name    MarioGuarchNFT Sentiment                 0 Name: 6928, dtype: object</div>`)[0];
+                popup_4fb4be93f93b4857b0291500ef4c3eff.setContent(html_3c00121d521c497ba5694a38d04cbe24);
+            
+
+            marker_98d7c554f3cc4c4e92d9bcc2936a9f16.bindPopup(popup_4fb4be93f93b4857b0291500ef4c3eff)
+            ;
+
+            
+        
+    
+        var marker_46499fe268654e64940f4871e92ea11c = L.marker(
+            [30.127892, -97.928935],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_866aa628ee9a4dd8acba80ca7b2e31d8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7e3fdd65a2a248698fc53c7c675f4a25 = $(`<div id="html_7e3fdd65a2a248698fc53c7c675f4a25" style="width: 100.0%; height: 100.0%;">user_name    mecee Sentiment        1 Name: 7158, dtype: object</div>`)[0];
+                popup_866aa628ee9a4dd8acba80ca7b2e31d8.setContent(html_7e3fdd65a2a248698fc53c7c675f4a25);
+            
+
+            marker_46499fe268654e64940f4871e92ea11c.bindPopup(popup_866aa628ee9a4dd8acba80ca7b2e31d8)
+            ;
+
+            
+        
+    
+        var marker_f973e2b64aa041188b7644d75f19d7eb = L.marker(
+            [48.8155214, 2.2241006],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_f78687892b7d44daa7f8e2663e4b0d16 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3ffd4a7a989e4e9e99072830b495c1bb = $(`<div id="html_3ffd4a7a989e4e9e99072830b495c1bb" style="width: 100.0%; height: 100.0%;">user_name    Beauvarlet Sentiment             0 Name: 7186, dtype: object</div>`)[0];
+                popup_f78687892b7d44daa7f8e2663e4b0d16.setContent(html_3ffd4a7a989e4e9e99072830b495c1bb);
+            
+
+            marker_f973e2b64aa041188b7644d75f19d7eb.bindPopup(popup_f78687892b7d44daa7f8e2663e4b0d16)
+            ;
+
+            
+        
+    
+        var marker_8a6683b7a6ac46929543f390fb0dcff4 = L.marker(
+            [-34.674453, -58.5317922],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_3ab00e477aa04e86a356b0c5d96f4ea2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d0bbcf3fd4eb495695ead65e79e377cc = $(`<div id="html_d0bbcf3fd4eb495695ead65e79e377cc" style="width: 100.0%; height: 100.0%;">user_name    ValorDolarBtc Sentiment                0 Name: 7271, dtype: object</div>`)[0];
+                popup_3ab00e477aa04e86a356b0c5d96f4ea2.setContent(html_d0bbcf3fd4eb495695ead65e79e377cc);
+            
+
+            marker_8a6683b7a6ac46929543f390fb0dcff4.bindPopup(popup_3ab00e477aa04e86a356b0c5d96f4ea2)
+            ;
+
+            
+        
+    
+        var marker_6cb905a5114046c9af47b5695f78ce5c = L.marker(
+            [7.2991429, 3.7770114],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_119e67c2a9db44afad4617e042eb9a60 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ec1befe10cc04b9a8b3d8e1c193f005b = $(`<div id="html_ec1befe10cc04b9a8b3d8e1c193f005b" style="width: 100.0%; height: 100.0%;">user_name    hayontemi Sentiment            0 Name: 7595, dtype: object</div>`)[0];
+                popup_119e67c2a9db44afad4617e042eb9a60.setContent(html_ec1befe10cc04b9a8b3d8e1c193f005b);
+            
+
+            marker_6cb905a5114046c9af47b5695f78ce5c.bindPopup(popup_119e67c2a9db44afad4617e042eb9a60)
+            ;
+
+            
+        
+    
+        var marker_fe5983500f564d8ea5da3cd1717e14b4 = L.marker(
+            [25.7090404, -80.321683],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_80fbb70d73194afe95c5b2a1a5e6885b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2d1f84de62864189b6708367f2e2142b = $(`<div id="html_2d1f84de62864189b6708367f2e2142b" style="width: 100.0%; height: 100.0%;">user_name    soyfira Sentiment          1 Name: 7816, dtype: object</div>`)[0];
+                popup_80fbb70d73194afe95c5b2a1a5e6885b.setContent(html_2d1f84de62864189b6708367f2e2142b);
+            
+
+            marker_fe5983500f564d8ea5da3cd1717e14b4.bindPopup(popup_80fbb70d73194afe95c5b2a1a5e6885b)
+            ;
+
+            
+        
+    
+        var marker_496c0689029b415a81f6e62e04de0e97 = L.marker(
+            [43.403221, -79.639319],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_e4d455c1b72a41b59950f076096cac36 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_01d5846690ad4945850bc5f596d54a8d = $(`<div id="html_01d5846690ad4945850bc5f596d54a8d" style="width: 100.0%; height: 100.0%;">user_name    DaveParkinsonCA Sentiment                  0 Name: 7910, dtype: object</div>`)[0];
+                popup_e4d455c1b72a41b59950f076096cac36.setContent(html_01d5846690ad4945850bc5f596d54a8d);
+            
+
+            marker_496c0689029b415a81f6e62e04de0e97.bindPopup(popup_e4d455c1b72a41b59950f076096cac36)
+            ;
+
+            
+        
+    
+        var marker_949874dea3844c228c06aee060707bce = L.marker(
+            [27.694323, -82.758209],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_ade65737680749e3a2a828773d29b9f9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d290c7470eee44d6b338a11235f89665 = $(`<div id="html_d290c7470eee44d6b338a11235f89665" style="width: 100.0%; height: 100.0%;">user_name    Gios_typos Sentiment             1 Name: 7979, dtype: object</div>`)[0];
+                popup_ade65737680749e3a2a828773d29b9f9.setContent(html_d290c7470eee44d6b338a11235f89665);
+            
+
+            marker_949874dea3844c228c06aee060707bce.bindPopup(popup_ade65737680749e3a2a828773d29b9f9)
+            ;
+
+            
+        
+    
+        var marker_0596f181e58946faba3b328ceeb8776b = L.marker(
+            [12.919037, 77.373474],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_2af487f3c64d4d9e930301035b32d26a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9d36633686f941a58eb05e7c41f16fb6 = $(`<div id="html_9d36633686f941a58eb05e7c41f16fb6" style="width: 100.0%; height: 100.0%;">user_name    ThatsTanishk Sentiment               0 Name: 8000, dtype: object</div>`)[0];
+                popup_2af487f3c64d4d9e930301035b32d26a.setContent(html_9d36633686f941a58eb05e7c41f16fb6);
+            
+
+            marker_0596f181e58946faba3b328ceeb8776b.bindPopup(popup_2af487f3c64d4d9e930301035b32d26a)
+            ;
+
+            
+        
+    
+        var marker_e6b1c5fb21964ff4ae46f8a0cc1578c2 = L.marker(
+            [28.397657, 76.84252],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_8e9c2ab4647240e7acc5a6188bdf8959 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4ed41a9f67d04b4e9975a5085bb9bde7 = $(`<div id="html_4ed41a9f67d04b4e9975a5085bb9bde7" style="width: 100.0%; height: 100.0%;">user_name    prateek1793 Sentiment              0 Name: 8177, dtype: object</div>`)[0];
+                popup_8e9c2ab4647240e7acc5a6188bdf8959.setContent(html_4ed41a9f67d04b4e9975a5085bb9bde7);
+            
+
+            marker_e6b1c5fb21964ff4ae46f8a0cc1578c2.bindPopup(popup_8e9c2ab4647240e7acc5a6188bdf8959)
+            ;
+
+            
+        
+    
+        var marker_b6dce4a1a2b2459b9fee7c4117f68690 = L.marker(
+            [39.007188, -77.432552],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_5222f3cf79bb4ce48e8060e7d057b409 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3aead8d125424927b671a4ff3b3e888e = $(`<div id="html_3aead8d125424927b671a4ff3b3e888e" style="width: 100.0%; height: 100.0%;">user_name    leggett_peter Sentiment                0 Name: 9045, dtype: object</div>`)[0];
+                popup_5222f3cf79bb4ce48e8060e7d057b409.setContent(html_3aead8d125424927b671a4ff3b3e888e);
+            
+
+            marker_b6dce4a1a2b2459b9fee7c4117f68690.bindPopup(popup_5222f3cf79bb4ce48e8060e7d057b409)
+            ;
+
+            
+        
+    
+        var marker_f72ee1559096411288a5cb69f2b79b51 = L.marker(
+            [42.7000873, -71.5749],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_6b428ff7cbcb4b298467654f2fa5a898 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d5e48d0505d64e4cbf9adcf0a859e688 = $(`<div id="html_d5e48d0505d64e4cbf9adcf0a859e688" style="width: 100.0%; height: 100.0%;">user_name    EvanKirstel Sentiment              1 Name: 9180, dtype: object</div>`)[0];
+                popup_6b428ff7cbcb4b298467654f2fa5a898.setContent(html_d5e48d0505d64e4cbf9adcf0a859e688);
+            
+
+            marker_f72ee1559096411288a5cb69f2b79b51.bindPopup(popup_6b428ff7cbcb4b298467654f2fa5a898)
+            ;
+
+            
+        
+    
+        var marker_78e4262986494556a0467e2585d991a3 = L.marker(
+            [59.4573902, 17.7993309],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_1eb7485528d443efb13e51561746c711);
+        
+    
+            var popup_74b6d9caf2ac4e81ab6b3b630abf1584 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_40549d2c43e14010bf13434816aaca3c = $(`<div id="html_40549d2c43e14010bf13434816aaca3c" style="width: 100.0%; height: 100.0%;">user_name    senthazalravi Sentiment                1 Name: 9196, dtype: object</div>`)[0];
+                popup_74b6d9caf2ac4e81ab6b3b630abf1584.setContent(html_40549d2c43e14010bf13434816aaca3c);
+            
+
+            marker_78e4262986494556a0467e2585d991a3.bindPopup(popup_74b6d9caf2ac4e81ab6b3b630abf1584)
+            ;
+
+            
+        
+</script>

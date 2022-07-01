@@ -1,0 +1,181 @@
+.content-graphanalysis {
+    width: 83%;
+    padding: 0px 10px;
+    margin-top: 20px;
+    position: absolute;
+    top: 70%;
+    left: 17%;
+}
+
+.content-graphanalysis .cyber-warfare {
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 3%;
+}
+
+.cyber-warfare h1 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.cyber-warfare p {
+    margin-top: 20px;
+    padding: 0px 30px;
+    color: black;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.cyber-warfare img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+}
+
+.content-graphanalysis .facebook {
+    margin-top: 30px;
+    background-color: #f64e1f;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 3%;
+}
+
+.facebook .icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+
+}
+
+.facebook .sna {
+    background-color: #56ace9;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 3%;
+
+}
+
+.facebook .profiling {
+    background-color: #ba70c6;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 3%;
+
+}
+
+.facebook .icon-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+
+}
+
+.facebook .form-control {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 1rem;
+}
+
+.facebook .submit {
+    border-radius: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin: auto;
+    display: block;
+    width: 150px;
+}
+
+.facebook .errorShow {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    color: red;
+    text-align: center;
+}
+
+
+.content-graphanalysis .twitter {
+    margin-top: 30px;
+    background-color: #fbaf41;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 3%;
+}
+
+.twitter .icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+
+}
+
+.twitter .sna {
+    background-color: #56ace9;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 3%;
+
+}
+
+.twitter .profiling {
+    background-color: #ba70c6;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 3%;
+
+}
+
+.twitter .icon-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+
+}
+
+.twitter .form-control {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 1rem;
+}
+
+.twitter .submit {
+    border-radius: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin: auto;
+    display: block;
+    /* width: 150px; */
+}
+
+.twitter .errorShow {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    color: red;
+    text-align: center;
+}
+
+.twitter p{
+    text-align: center;
+}

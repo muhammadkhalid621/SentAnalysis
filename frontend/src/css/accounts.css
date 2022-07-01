@@ -1,0 +1,220 @@
+nav {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 17px;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    width: 12%;
+    height: 80vh;
+    text-align: center;
+    left: 4%;
+    margin-top: 3%;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+nav a {
+    line-height: 35px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-width: 0ch;
+}
+
+/* nav button{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    position: absolute;
+    bottom: 20px;
+    font-size: 20px;
+  } */
+.nav-btn {
+    background-color: white;
+    border: none;
+    bottom: 3.5%;
+    position: absolute;
+    display: block;
+    width: -webkit-fill-available;
+}
+
+nav img {
+    margin: 15px auto;
+    border-radius: 5rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+img.icon {
+    height: 25px;
+    width: 25px;
+    margin: 12px 3px;
+}
+
+nav button img {
+    height: 25px;
+    width: 25px;
+    margin: 0px 5px;
+}
+
+.accounts-content {
+    width: 82%;
+    padding: 24px 37px;
+    background-color: orangered;
+    position: absolute;
+    top: 5%;
+    left: 17.5%;
+}
+
+.accounts-content .profile {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 3%;
+
+}
+
+
+
+.profile-info img {
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+.profile-info h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    margin-top: 10px;
+}
+
+.profile-info h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: black;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.profile-info h3 {
+    /* text-align: center; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: black;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.accounts-content .change-pass {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 3%;
+
+}
+
+.change-pass h1 {
+    color: black;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.change-pass .submit {
+
+    border-radius: 20px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+.change-pass p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.change-pass .errorShow {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    color: red;
+}
+
+.accounts-content .tasks {
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 3%;
+
+}
+
+.tasks h1 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.task-info-complete .circle {
+    height: 20px;
+    width: 20px;
+    background-color:orange;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.task-info-complete p {
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.task-info-complete .task-btn{
+    border-radius: 10px;
+    background-color: orange;
+    /* margin-left: 250px; */
+    float: right;
+    
+}
+
+.task-info-pending .circle {
+    height: 20px;
+    width: 20px;
+    background-color:greenyellow;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.task-info-pending p {
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.task-info-pending .task-btn{
+    border-radius: 10px;
+    background-color: greenyellow;
+    /* margin-left: 250px; */
+    float: right;
+    
+}

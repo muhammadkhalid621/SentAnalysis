@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: white;
+}
+.content-model {
+  width: 83%;
+  padding: 0px 10px;
+  margin-top: 20px;
+  position: absolute;
+  top: 70%;
+  left: 17%;
+}
+.content-model .instructions {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 5%;
+}
+.instructions h1 {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: black;
+}
+
+.instructions p {
+  margin-top: 20px;
+  padding: 0px 30px;
+  color: black;
+  font-weight: 400;
+  font-size: medium;
+}
+
+.content-model .model-form {
+  margin-top: 20px;
+  background-color: rgba(185, 192, 192, 0.425);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 5%;
+}
+.model-form .submit {
+  border-radius: 20px;
+  font-size: 25px;
+  margin-top: 20px;
+  margin:auto;
+  display:block
+}
+.model-form p{
+  margin-top: 10px;
+  font-size: 15px;
+}
+.model-form .errorShow {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  color: red;
+}

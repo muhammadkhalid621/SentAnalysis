@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_5ea25a71a6a948278b274f857db46462 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_5ea25a71a6a948278b274f857db46462" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_5ea25a71a6a948278b274f857db46462 = L.map(
+        'map_5ea25a71a6a948278b274f857db46462', {
+        center: [30.3753, 69.3451],
+        zoom: 1.3,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_4ac672dfc8b944ef9d4c4595409a16e2 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_5ea25a71a6a948278b274f857db46462);
+    
+            var marker_cluster_75a43861113f4d8e9308ea05592d4d59 = L.markerClusterGroup({});
+            map_5ea25a71a6a948278b274f857db46462.addLayer(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+            
+    
+        var marker_91f51768f12b4152831e47c9812e779b = L.marker(
+            [27.708226, 69.328873],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_4f5a1b1243234c83aa62fd865227f2f8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c4e23e41d0054d02b4f1e0f4b1d9de45 = $(`<div id="html_c4e23e41d0054d02b4f1e0f4b1d9de45" style="width: 100.0%; height: 100.0%;">user_name    Inzamam02367810 Sentiment                  0 Name: 10, dtype: object</div>`)[0];
+                popup_4f5a1b1243234c83aa62fd865227f2f8.setContent(html_c4e23e41d0054d02b4f1e0f4b1d9de45);
+            
+
+            marker_91f51768f12b4152831e47c9812e779b.bindPopup(popup_4f5a1b1243234c83aa62fd865227f2f8)
+            ;
+
+            
+        
+    
+        var marker_d1234b2774cb4b7ebcf9935f83c85f0a = L.marker(
+            [24.802239, 66.95121],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_d08a392b50f84dada8db4bcd5742134d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_48df54a59e9b44b4861d73c0d00a567d = $(`<div id="html_48df54a59e9b44b4861d73c0d00a567d" style="width: 100.0%; height: 100.0%;">user_name    Saimshaikhpri Sentiment                0 Name: 11, dtype: object</div>`)[0];
+                popup_d08a392b50f84dada8db4bcd5742134d.setContent(html_48df54a59e9b44b4861d73c0d00a567d);
+            
+
+            marker_d1234b2774cb4b7ebcf9935f83c85f0a.bindPopup(popup_d08a392b50f84dada8db4bcd5742134d)
+            ;
+
+            
+        
+    
+        var marker_590d6e906544438e83d98bf74ace72dc = L.marker(
+            [27.708226, 69.328873],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_ebde58a2a63d4a7292d70010701d6ec5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5bca9bab418c41e0b2bfecf3d06618f7 = $(`<div id="html_5bca9bab418c41e0b2bfecf3d06618f7" style="width: 100.0%; height: 100.0%;">user_name    KKniazi6 Sentiment           1 Name: 14, dtype: object</div>`)[0];
+                popup_ebde58a2a63d4a7292d70010701d6ec5.setContent(html_5bca9bab418c41e0b2bfecf3d06618f7);
+            
+
+            marker_590d6e906544438e83d98bf74ace72dc.bindPopup(popup_ebde58a2a63d4a7292d70010701d6ec5)
+            ;
+
+            
+        
+    
+        var marker_733b6077b0ae40c5ac64e68f9fb64e98 = L.marker(
+            [27.708226, 69.328873],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_1fda26cd81304d9b8b541d0874d6b48a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ab612e4853724564a4afad4aa6dab954 = $(`<div id="html_ab612e4853724564a4afad4aa6dab954" style="width: 100.0%; height: 100.0%;">user_name    KKniazi6 Sentiment           0 Name: 17, dtype: object</div>`)[0];
+                popup_1fda26cd81304d9b8b541d0874d6b48a.setContent(html_ab612e4853724564a4afad4aa6dab954);
+            
+
+            marker_733b6077b0ae40c5ac64e68f9fb64e98.bindPopup(popup_1fda26cd81304d9b8b541d0874d6b48a)
+            ;
+
+            
+        
+    
+        var marker_f657e0fdaa8e4b90a9f6e85bda777ac0 = L.marker(
+            [27.708226, 69.328873],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_cc50e72c24814318bf78e6df029f8de0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_afc22b24995c48e2b078a2b9c11addd9 = $(`<div id="html_afc22b24995c48e2b078a2b9c11addd9" style="width: 100.0%; height: 100.0%;">user_name    Wasi730Ch Sentiment            0 Name: 104, dtype: object</div>`)[0];
+                popup_cc50e72c24814318bf78e6df029f8de0.setContent(html_afc22b24995c48e2b078a2b9c11addd9);
+            
+
+            marker_f657e0fdaa8e4b90a9f6e85bda777ac0.bindPopup(popup_cc50e72c24814318bf78e6df029f8de0)
+            ;
+
+            
+        
+    
+        var marker_8364d35f86fb4030ba4b693227c32378 = L.marker(
+            [24.6182526, 54.8939725],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_ac357dbc1c89455088c4a8e600a5ebbd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_19958fdaab0a40219213b5f5e1ac2933 = $(`<div id="html_19958fdaab0a40219213b5f5e1ac2933" style="width: 100.0%; height: 100.0%;">user_name    bushisaqib Sentiment             1 Name: 126, dtype: object</div>`)[0];
+                popup_ac357dbc1c89455088c4a8e600a5ebbd.setContent(html_19958fdaab0a40219213b5f5e1ac2933);
+            
+
+            marker_8364d35f86fb4030ba4b693227c32378.bindPopup(popup_ac357dbc1c89455088c4a8e600a5ebbd)
+            ;
+
+            
+        
+    
+        var marker_b5f24fa45a274d94800ec7971c701c97 = L.marker(
+            [24.880877, 67.177483],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_369c5487157e457285cf433e2eea1b16 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9a28853d264141a49e2765c01fcc260a = $(`<div id="html_9a28853d264141a49e2765c01fcc260a" style="width: 100.0%; height: 100.0%;">user_name    Imranbutt_pk Sentiment               0 Name: 169, dtype: object</div>`)[0];
+                popup_369c5487157e457285cf433e2eea1b16.setContent(html_9a28853d264141a49e2765c01fcc260a);
+            
+
+            marker_b5f24fa45a274d94800ec7971c701c97.bindPopup(popup_369c5487157e457285cf433e2eea1b16)
+            ;
+
+            
+        
+    
+        var marker_7cf80340b6084df6a17d3d7c956c9acd = L.marker(
+            [51.4772246, -0.2285894],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_c1c8069464c649d9b25e7a5a00349d25 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_753d4fc6588046f193f144a727d3f13a = $(`<div id="html_753d4fc6588046f193f144a727d3f13a" style="width: 100.0%; height: 100.0%;">user_name    HamidNowab Sentiment             1 Name: 207, dtype: object</div>`)[0];
+                popup_c1c8069464c649d9b25e7a5a00349d25.setContent(html_753d4fc6588046f193f144a727d3f13a);
+            
+
+            marker_7cf80340b6084df6a17d3d7c956c9acd.bindPopup(popup_c1c8069464c649d9b25e7a5a00349d25)
+            ;
+
+            
+        
+    
+        var marker_3728b7ab975c4cd7ab79ea9d9ea30f5f = L.marker(
+            [23.703272, 66.654132],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_e3de013c58b24f1399b58e84dcc31c60 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0c59989043cf4c18880a5ae9526a4981 = $(`<div id="html_0c59989043cf4c18880a5ae9526a4981" style="width: 100.0%; height: 100.0%;">user_name    KASHIFGRAMI Sentiment              0 Name: 259, dtype: object</div>`)[0];
+                popup_e3de013c58b24f1399b58e84dcc31c60.setContent(html_0c59989043cf4c18880a5ae9526a4981);
+            
+
+            marker_3728b7ab975c4cd7ab79ea9d9ea30f5f.bindPopup(popup_e3de013c58b24f1399b58e84dcc31c60)
+            ;
+
+            
+        
+    
+        var marker_a7ea62d21bb248f199fd8d200961ed62 = L.marker(
+            [23.56037, 60.878613],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_3311af3764e2448aa1e7d56e101d1d40 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fcfe35d2ced24b5a8b82ef7af6dd63a6 = $(`<div id="html_fcfe35d2ced24b5a8b82ef7af6dd63a6" style="width: 100.0%; height: 100.0%;">user_name    Waqas_Ahmad__ Sentiment                0 Name: 269, dtype: object</div>`)[0];
+                popup_3311af3764e2448aa1e7d56e101d1d40.setContent(html_fcfe35d2ced24b5a8b82ef7af6dd63a6);
+            
+
+            marker_a7ea62d21bb248f199fd8d200961ed62.bindPopup(popup_3311af3764e2448aa1e7d56e101d1d40)
+            ;
+
+            
+        
+    
+        var marker_a4f848ea31954d06ba385ed60f1fb382 = L.marker(
+            [23.56037, 60.878613],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_15f47a966309474bb5d6e1a5fb9d2465 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6a84ead7cc4f409db33e806ae1a340f3 = $(`<div id="html_6a84ead7cc4f409db33e806ae1a340f3" style="width: 100.0%; height: 100.0%;">user_name    Fairy_Queen__ Sentiment                0 Name: 297, dtype: object</div>`)[0];
+                popup_15f47a966309474bb5d6e1a5fb9d2465.setContent(html_6a84ead7cc4f409db33e806ae1a340f3);
+            
+
+            marker_a4f848ea31954d06ba385ed60f1fb382.bindPopup(popup_15f47a966309474bb5d6e1a5fb9d2465)
+            ;
+
+            
+        
+    
+        var marker_3abd0fa9fe5d44f7850f1d751f7c8b8d = L.marker(
+            [24.802239, 66.95121],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_c3bdc43c54b64cd29e4eaab0f84f7c96 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0e2e29184d0b4c0b8264db694fd6bdc5 = $(`<div id="html_0e2e29184d0b4c0b8264db694fd6bdc5" style="width: 100.0%; height: 100.0%;">user_name    IAMsheheryaar Sentiment                0 Name: 343, dtype: object</div>`)[0];
+                popup_c3bdc43c54b64cd29e4eaab0f84f7c96.setContent(html_0e2e29184d0b4c0b8264db694fd6bdc5);
+            
+
+            marker_3abd0fa9fe5d44f7850f1d751f7c8b8d.bindPopup(popup_c3bdc43c54b64cd29e4eaab0f84f7c96)
+            ;
+
+            
+        
+    
+        var marker_4c41ba824b9d4f568da9bbb69dabeddd = L.marker(
+            [24.802239, 66.95121],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_86696fb44a6343e9bebfdc09d164b4e8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7bba1a2097e84ada80d862e2043aec10 = $(`<div id="html_7bba1a2097e84ada80d862e2043aec10" style="width: 100.0%; height: 100.0%;">user_name    Zainulabideenz Sentiment                 0 Name: 355, dtype: object</div>`)[0];
+                popup_86696fb44a6343e9bebfdc09d164b4e8.setContent(html_7bba1a2097e84ada80d862e2043aec10);
+            
+
+            marker_4c41ba824b9d4f568da9bbb69dabeddd.bindPopup(popup_86696fb44a6343e9bebfdc09d164b4e8)
+            ;
+
+            
+        
+    
+        var marker_6e2258ca93814ea19508ece64bb35513 = L.marker(
+            [40.541722, -73.962582],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_43d72dddd7694c148a4451ed8045c16f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9f0e940f3eaf4d1d8e498c0fb0829085 = $(`<div id="html_9f0e940f3eaf4d1d8e498c0fb0829085" style="width: 100.0%; height: 100.0%;">user_name    minhal_dr Sentiment            1 Name: 397, dtype: object</div>`)[0];
+                popup_43d72dddd7694c148a4451ed8045c16f.setContent(html_9f0e940f3eaf4d1d8e498c0fb0829085);
+            
+
+            marker_6e2258ca93814ea19508ece64bb35513.bindPopup(popup_43d72dddd7694c148a4451ed8045c16f)
+            ;
+
+            
+        
+    
+        var marker_083e59f3a85b4e10a0520cbf4d9e1ea3 = L.marker(
+            [24.3320675, 46.3043976],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_45bafbd764cd4e3e95aecb246bed6558 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1e31ea2fa0c844c2bada4f8d51e6d4b9 = $(`<div id="html_1e31ea2fa0c844c2bada4f8d51e6d4b9" style="width: 100.0%; height: 100.0%;">user_name    soulhacker2092 Sentiment                 1 Name: 408, dtype: object</div>`)[0];
+                popup_45bafbd764cd4e3e95aecb246bed6558.setContent(html_1e31ea2fa0c844c2bada4f8d51e6d4b9);
+            
+
+            marker_083e59f3a85b4e10a0520cbf4d9e1ea3.bindPopup(popup_45bafbd764cd4e3e95aecb246bed6558)
+            ;
+
+            
+        
+    
+        var marker_333395f81009458dbb32af2951ca35a8 = L.marker(
+            [28.640528, 70.653427],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_7966d9fab6c94ae4a4d3ebc0ec1b298f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dc255f5e209e4ce6a09de032566c0254 = $(`<div id="html_dc255f5e209e4ce6a09de032566c0254" style="width: 100.0%; height: 100.0%;">user_name    Nomi_1519 Sentiment            0 Name: 432, dtype: object</div>`)[0];
+                popup_7966d9fab6c94ae4a4d3ebc0ec1b298f.setContent(html_dc255f5e209e4ce6a09de032566c0254);
+            
+
+            marker_333395f81009458dbb32af2951ca35a8.bindPopup(popup_7966d9fab6c94ae4a4d3ebc0ec1b298f)
+            ;
+
+            
+        
+    
+        var marker_558bd77ae4e94e77aa7f5e82f192d02a = L.marker(
+            [24.3320675, 46.3043976],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_491c7dec347f4092a178e3786535b535 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ac4fb5e121c745ec9657ea15300dbdef = $(`<div id="html_ac4fb5e121c745ec9657ea15300dbdef" style="width: 100.0%; height: 100.0%;">user_name    soulhacker2092 Sentiment                 0 Name: 450, dtype: object</div>`)[0];
+                popup_491c7dec347f4092a178e3786535b535.setContent(html_ac4fb5e121c745ec9657ea15300dbdef);
+            
+
+            marker_558bd77ae4e94e77aa7f5e82f192d02a.bindPopup(popup_491c7dec347f4092a178e3786535b535)
+            ;
+
+            
+        
+    
+        var marker_b1aad1ad5d384485b7e0b7c245f044bb = L.marker(
+            [24.802239, 66.95121],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_55d350c23beb433d93d483c63062fe78 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9bf5f81604ca4177bc7b586b5c4de063 = $(`<div id="html_9bf5f81604ca4177bc7b586b5c4de063" style="width: 100.0%; height: 100.0%;">user_name    NaveedA58291976 Sentiment                  1 Name: 456, dtype: object</div>`)[0];
+                popup_55d350c23beb433d93d483c63062fe78.setContent(html_9bf5f81604ca4177bc7b586b5c4de063);
+            
+
+            marker_b1aad1ad5d384485b7e0b7c245f044bb.bindPopup(popup_55d350c23beb433d93d483c63062fe78)
+            ;
+
+            
+        
+    
+        var marker_c914e69217b04c2dae14059ceb39e67d = L.marker(
+            [27.708226, 69.328873],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_1edc86b6fcea48f193990d2d6cceb611 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0a6b1702e5844dc68e617cff14ac630c = $(`<div id="html_0a6b1702e5844dc68e617cff14ac630c" style="width: 100.0%; height: 100.0%;">user_name    ChaudhryAhmed22 Sentiment                  0 Name: 477, dtype: object</div>`)[0];
+                popup_1edc86b6fcea48f193990d2d6cceb611.setContent(html_0a6b1702e5844dc68e617cff14ac630c);
+            
+
+            marker_c914e69217b04c2dae14059ceb39e67d.bindPopup(popup_1edc86b6fcea48f193990d2d6cceb611)
+            ;
+
+            
+        
+    
+        var marker_95139beab1064dfc9e94f749ab515c96 = L.marker(
+            [24.802239, 66.95121],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_5e746d2e0a374a34a297e2dad5e75aae = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1d7c6f6921a146549340cc2a7860e45e = $(`<div id="html_1d7c6f6921a146549340cc2a7860e45e" style="width: 100.0%; height: 100.0%;">user_name    Dawood_o1 Sentiment            0 Name: 510, dtype: object</div>`)[0];
+                popup_5e746d2e0a374a34a297e2dad5e75aae.setContent(html_1d7c6f6921a146549340cc2a7860e45e);
+            
+
+            marker_95139beab1064dfc9e94f749ab515c96.bindPopup(popup_5e746d2e0a374a34a297e2dad5e75aae)
+            ;
+
+            
+        
+    
+        var marker_b4d8cd6ba31d4b2db2449e0fe193b673 = L.marker(
+            [24.802239, 66.95121],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_60970c56f7964fdea6af16ea1692c623 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_eeea3bd60c9e47488b7a5327fc57276c = $(`<div id="html_eeea3bd60c9e47488b7a5327fc57276c" style="width: 100.0%; height: 100.0%;">user_name    Dawood_o1 Sentiment            1 Name: 524, dtype: object</div>`)[0];
+                popup_60970c56f7964fdea6af16ea1692c623.setContent(html_eeea3bd60c9e47488b7a5327fc57276c);
+            
+
+            marker_b4d8cd6ba31d4b2db2449e0fe193b673.bindPopup(popup_60970c56f7964fdea6af16ea1692c623)
+            ;
+
+            
+        
+    
+        var marker_5063e552dec144a1b6c4969ad2ea6e97 = L.marker(
+            [24.802239, 66.95121],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_b547a112d0fb4a19aa8ade3b9c511120 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_26c3a0b6124f4adf84a9a5640893a3c3 = $(`<div id="html_26c3a0b6124f4adf84a9a5640893a3c3" style="width: 100.0%; height: 100.0%;">user_name    Dawood_o1 Sentiment            0 Name: 536, dtype: object</div>`)[0];
+                popup_b547a112d0fb4a19aa8ade3b9c511120.setContent(html_26c3a0b6124f4adf84a9a5640893a3c3);
+            
+
+            marker_5063e552dec144a1b6c4969ad2ea6e97.bindPopup(popup_b547a112d0fb4a19aa8ade3b9c511120)
+            ;
+
+            
+        
+    
+        var marker_ce612492adcf4bd7b75114d6a8b2f75c = L.marker(
+            [31.799749, 70.883446],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_31a74d937b96498bafab25262423be1a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e022dbf43f5747cd961b0d0ab364d0df = $(`<div id="html_e022dbf43f5747cd961b0d0ab364d0df" style="width: 100.0%; height: 100.0%;">user_name    awaisahmghuman Sentiment                 0 Name: 537, dtype: object</div>`)[0];
+                popup_31a74d937b96498bafab25262423be1a.setContent(html_e022dbf43f5747cd961b0d0ab364d0df);
+            
+
+            marker_ce612492adcf4bd7b75114d6a8b2f75c.bindPopup(popup_31a74d937b96498bafab25262423be1a)
+            ;
+
+            
+        
+    
+        var marker_9ea0ce55bdb248779d40179c76e8f016 = L.marker(
+            [31.799749, 70.883446],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_fbb7646e44ae4f64be758358b21c14a1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_874e1a4898564786843a4eb31feb64d5 = $(`<div id="html_874e1a4898564786843a4eb31feb64d5" style="width: 100.0%; height: 100.0%;">user_name    awaisahmghuman Sentiment                 0 Name: 538, dtype: object</div>`)[0];
+                popup_fbb7646e44ae4f64be758358b21c14a1.setContent(html_874e1a4898564786843a4eb31feb64d5);
+            
+
+            marker_9ea0ce55bdb248779d40179c76e8f016.bindPopup(popup_fbb7646e44ae4f64be758358b21c14a1)
+            ;
+
+            
+        
+    
+        var marker_4ac1ec08b70f4bcca63b06cb2bc9f9e9 = L.marker(
+            [30.284471, 71.912697],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_487685388240459f9419f54bc14ec118 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_66854482dd464e2383a30dcd4beb7b0e = $(`<div id="html_66854482dd464e2383a30dcd4beb7b0e" style="width: 100.0%; height: 100.0%;">user_name    ziashahid90 Sentiment              1 Name: 541, dtype: object</div>`)[0];
+                popup_487685388240459f9419f54bc14ec118.setContent(html_66854482dd464e2383a30dcd4beb7b0e);
+            
+
+            marker_4ac1ec08b70f4bcca63b06cb2bc9f9e9.bindPopup(popup_487685388240459f9419f54bc14ec118)
+            ;
+
+            
+        
+    
+        var marker_17f39795cc424fa2abc0e0307fbd09e6 = L.marker(
+            [27.708226, 69.328873],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_858ab101d2fe4e33a9ad89b0fc63db5b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1d3ccb50950b4521be3b68d3e06921c3 = $(`<div id="html_1d3ccb50950b4521be3b68d3e06921c3" style="width: 100.0%; height: 100.0%;">user_name    naveedsultan_ Sentiment                0 Name: 572, dtype: object</div>`)[0];
+                popup_858ab101d2fe4e33a9ad89b0fc63db5b.setContent(html_1d3ccb50950b4521be3b68d3e06921c3);
+            
+
+            marker_17f39795cc424fa2abc0e0307fbd09e6.bindPopup(popup_858ab101d2fe4e33a9ad89b0fc63db5b)
+            ;
+
+            
+        
+    
+        var marker_376e949ede3d48b78e3e3e3be7d22278 = L.marker(
+            [27.708226, 69.328873],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_6e33e71507f44b86ac48dcad6f99e546 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d2df2fdd419648bb8dd5440ad1efa37a = $(`<div id="html_d2df2fdd419648bb8dd5440ad1efa37a" style="width: 100.0%; height: 100.0%;">user_name    Danishw75840602 Sentiment                  0 Name: 620, dtype: object</div>`)[0];
+                popup_6e33e71507f44b86ac48dcad6f99e546.setContent(html_d2df2fdd419648bb8dd5440ad1efa37a);
+            
+
+            marker_376e949ede3d48b78e3e3e3be7d22278.bindPopup(popup_6e33e71507f44b86ac48dcad6f99e546)
+            ;
+
+            
+        
+    
+        var marker_3b603ca2d2cf465bb9b9201a7f41e24a = L.marker(
+            [23.703272, 66.654132],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_79f45a07adc942eba6fa9d0f04e6349d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9f47ae4f88064a81be74c68c36f3bcfd = $(`<div id="html_9f47ae4f88064a81be74c68c36f3bcfd" style="width: 100.0%; height: 100.0%;">user_name    ammarjadun Sentiment             1 Name: 641, dtype: object</div>`)[0];
+                popup_79f45a07adc942eba6fa9d0f04e6349d.setContent(html_9f47ae4f88064a81be74c68c36f3bcfd);
+            
+
+            marker_3b603ca2d2cf465bb9b9201a7f41e24a.bindPopup(popup_79f45a07adc942eba6fa9d0f04e6349d)
+            ;
+
+            
+        
+    
+        var marker_f5be63ba573442438038f418309316c1 = L.marker(
+            [31.218052, 70.062759],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_c642ac06eeac45c18befcc912b4980fd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1e913f9dc50d43bda7957eb1d79b5b2d = $(`<div id="html_1e913f9dc50d43bda7957eb1d79b5b2d" style="width: 100.0%; height: 100.0%;">user_name    AslmAfridi Sentiment             0 Name: 647, dtype: object</div>`)[0];
+                popup_c642ac06eeac45c18befcc912b4980fd.setContent(html_1e913f9dc50d43bda7957eb1d79b5b2d);
+            
+
+            marker_f5be63ba573442438038f418309316c1.bindPopup(popup_c642ac06eeac45c18befcc912b4980fd)
+            ;
+
+            
+        
+    
+        var marker_725854fd12ca475f92e79caff7f89968 = L.marker(
+            [33.911362, 71.414192],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_effc1b12988947c4bc27dc2dfee19c61 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2a336165ba33464497049cc062970f35 = $(`<div id="html_2a336165ba33464497049cc062970f35" style="width: 100.0%; height: 100.0%;">user_name    InkasarAziz Sentiment              0 Name: 657, dtype: object</div>`)[0];
+                popup_effc1b12988947c4bc27dc2dfee19c61.setContent(html_2a336165ba33464497049cc062970f35);
+            
+
+            marker_725854fd12ca475f92e79caff7f89968.bindPopup(popup_effc1b12988947c4bc27dc2dfee19c61)
+            ;
+
+            
+        
+    
+        var marker_5040e4a81cbb4601b43e7888d9075dbf = L.marker(
+            [33.911362, 71.414192],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_33579ba0a97b4ff994c8212379cf9867 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_59e1c5cdd2574e7796d7af2a26c0301d = $(`<div id="html_59e1c5cdd2574e7796d7af2a26c0301d" style="width: 100.0%; height: 100.0%;">user_name    InkasarAziz Sentiment              1 Name: 669, dtype: object</div>`)[0];
+                popup_33579ba0a97b4ff994c8212379cf9867.setContent(html_59e1c5cdd2574e7796d7af2a26c0301d);
+            
+
+            marker_5040e4a81cbb4601b43e7888d9075dbf.bindPopup(popup_33579ba0a97b4ff994c8212379cf9867)
+            ;
+
+            
+        
+    
+        var marker_721b0ffd60ba4dab99d3886efc37899d = L.marker(
+            [23.703272, 66.654132],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_74359fda4ac242098805f74e5d4cbd0e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_07fe7fd29e9e45da9f42eb3aac079fa8 = $(`<div id="html_07fe7fd29e9e45da9f42eb3aac079fa8" style="width: 100.0%; height: 100.0%;">user_name    AroobaShah260 Sentiment                0 Name: 687, dtype: object</div>`)[0];
+                popup_74359fda4ac242098805f74e5d4cbd0e.setContent(html_07fe7fd29e9e45da9f42eb3aac079fa8);
+            
+
+            marker_721b0ffd60ba4dab99d3886efc37899d.bindPopup(popup_74359fda4ac242098805f74e5d4cbd0e)
+            ;
+
+            
+        
+    
+        var marker_5791606d325e4c8b944c8f29cc36023b = L.marker(
+            [33.911362, 71.414192],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_d9c9ea0702754b1bb6d7a50a8fa28e03 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_681e1927c31e4b4f8851e2a00423018c = $(`<div id="html_681e1927c31e4b4f8851e2a00423018c" style="width: 100.0%; height: 100.0%;">user_name    InkasarAziz Sentiment              1 Name: 692, dtype: object</div>`)[0];
+                popup_d9c9ea0702754b1bb6d7a50a8fa28e03.setContent(html_681e1927c31e4b4f8851e2a00423018c);
+            
+
+            marker_5791606d325e4c8b944c8f29cc36023b.bindPopup(popup_d9c9ea0702754b1bb6d7a50a8fa28e03)
+            ;
+
+            
+        
+    
+        var marker_519a98f70c1742dd8b14438ce98b0dad = L.marker(
+            [33.911362, 71.414192],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_2c75cfe9095049d698876facb01cb192 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3457f2a24a2a42238a92463867dbd317 = $(`<div id="html_3457f2a24a2a42238a92463867dbd317" style="width: 100.0%; height: 100.0%;">user_name    InkasarAziz Sentiment              0 Name: 695, dtype: object</div>`)[0];
+                popup_2c75cfe9095049d698876facb01cb192.setContent(html_3457f2a24a2a42238a92463867dbd317);
+            
+
+            marker_519a98f70c1742dd8b14438ce98b0dad.bindPopup(popup_2c75cfe9095049d698876facb01cb192)
+            ;
+
+            
+        
+    
+        var marker_1f3d260ea15946c5b890a42107bad6d4 = L.marker(
+            [33.53611, 72.952919],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_1da8715731ea42db8cdef4a028ecb061 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_81d0dc142cdc4c5a98972557d8656de7 = $(`<div id="html_81d0dc142cdc4c5a98972557d8656de7" style="width: 100.0%; height: 100.0%;">user_name    UzmaAbb41606 Sentiment               1 Name: 704, dtype: object</div>`)[0];
+                popup_1da8715731ea42db8cdef4a028ecb061.setContent(html_81d0dc142cdc4c5a98972557d8656de7);
+            
+
+            marker_1f3d260ea15946c5b890a42107bad6d4.bindPopup(popup_1da8715731ea42db8cdef4a028ecb061)
+            ;
+
+            
+        
+    
+        var marker_348e11075e15452baedd8ca589392dcb = L.marker(
+            [31.451222, 74.267586],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_fbd1a82790d24dce91cd4d11e6659a4f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b3e459581cda4c038aa78422b2ae0005 = $(`<div id="html_b3e459581cda4c038aa78422b2ae0005" style="width: 100.0%; height: 100.0%;">user_name    umairhassanoo01 Sentiment                  1 Name: 712, dtype: object</div>`)[0];
+                popup_fbd1a82790d24dce91cd4d11e6659a4f.setContent(html_b3e459581cda4c038aa78422b2ae0005);
+            
+
+            marker_348e11075e15452baedd8ca589392dcb.bindPopup(popup_fbd1a82790d24dce91cd4d11e6659a4f)
+            ;
+
+            
+        
+    
+        var marker_db86194effeb45548ed76f1e468f750d = L.marker(
+            [27.708226, 69.328873],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_6199edaa53f94279a20eb0715c9e423b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e480f04b242945c48c283cb1616adfb4 = $(`<div id="html_e480f04b242945c48c283cb1616adfb4" style="width: 100.0%; height: 100.0%;">user_name    naumaansyed Sentiment              0 Name: 761, dtype: object</div>`)[0];
+                popup_6199edaa53f94279a20eb0715c9e423b.setContent(html_e480f04b242945c48c283cb1616adfb4);
+            
+
+            marker_db86194effeb45548ed76f1e468f750d.bindPopup(popup_6199edaa53f94279a20eb0715c9e423b)
+            ;
+
+            
+        
+    
+        var marker_b6464ded8d494403b7ddde66caa39e33 = L.marker(
+            [29.687616, 72.540558],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_ec1350f20b964be59eb8b40e3adc0daf = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6b7b165de0af436d9a5352eb56e9a8b2 = $(`<div id="html_6b7b165de0af436d9a5352eb56e9a8b2" style="width: 100.0%; height: 100.0%;">user_name    zahidmunir179 Sentiment                0 Name: 770, dtype: object</div>`)[0];
+                popup_ec1350f20b964be59eb8b40e3adc0daf.setContent(html_6b7b165de0af436d9a5352eb56e9a8b2);
+            
+
+            marker_b6464ded8d494403b7ddde66caa39e33.bindPopup(popup_ec1350f20b964be59eb8b40e3adc0daf)
+            ;
+
+            
+        
+    
+        var marker_d25396fe39384acc8d5248c0c2c80716 = L.marker(
+            [22.6261387, 51.2938738],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_75a43861113f4d8e9308ea05592d4d59);
+        
+    
+            var popup_efc45cccb0d745f8ad75fc747207716f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8de698033dce49118a0fbcdc38fc0f3f = $(`<div id="html_8de698033dce49118a0fbcdc38fc0f3f" style="width: 100.0%; height: 100.0%;">user_name    Muhammad_MNK786 Sentiment                  1 Name: 825, dtype: object</div>`)[0];
+                popup_efc45cccb0d745f8ad75fc747207716f.setContent(html_8de698033dce49118a0fbcdc38fc0f3f);
+            
+
+            marker_d25396fe39384acc8d5248c0c2c80716.bindPopup(popup_efc45cccb0d745f8ad75fc747207716f)
+            ;
+
+            
+        
+</script>

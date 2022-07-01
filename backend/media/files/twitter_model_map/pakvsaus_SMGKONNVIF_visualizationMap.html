@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_42f6e87e1023485eaf229f24e56cf6e6 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_42f6e87e1023485eaf229f24e56cf6e6" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_42f6e87e1023485eaf229f24e56cf6e6 = L.map(
+        'map_42f6e87e1023485eaf229f24e56cf6e6', {
+        center: [30.3753, 69.3451],
+        zoom: 1.3,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_6aeac2ee2a1a4136b5fdfbafb74394a0 = L.tileLayer(
+        'https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_42f6e87e1023485eaf229f24e56cf6e6);
+    
+            var marker_cluster_dfd184d91be94bfeb4b717ac184632ae = L.markerClusterGroup({});
+            map_42f6e87e1023485eaf229f24e56cf6e6.addLayer(marker_cluster_dfd184d91be94bfeb4b717ac184632ae);
+            
+    
+        var marker_500699a2036447c0a0bf498ee91c8a99 = L.marker(
+            [150.5209, 470085.0],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_dfd184d91be94bfeb4b717ac184632ae);
+        
+    
+            var popup_e5e6135b32564b09b8a96edd81d7bd7b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0a27c6f7bc0649daa2322c83ec87ca26 = $(`<div id="html_0a27c6f7bc0649daa2322c83ec87ca26" style="width: 100.0%; height: 100.0%;">user_name    alihameeds Name: 9, dtype: object</div>`)[0];
+                popup_e5e6135b32564b09b8a96edd81d7bd7b.setContent(html_0a27c6f7bc0649daa2322c83ec87ca26);
+            
+
+            marker_500699a2036447c0a0bf498ee91c8a99.bindPopup(popup_e5e6135b32564b09b8a96edd81d7bd7b)
+            ;
+
+            
+        
+    
+        var marker_09321ec553a24738b1b72f38194322dd = L.marker(
+            [66.65413, 23.703272],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_dfd184d91be94bfeb4b717ac184632ae);
+        
+    
+            var popup_e0bf6d9e14e04e28974da4b02539a524 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_eb46d6069a0643aba4d5119d53261732 = $(`<div id="html_eb46d6069a0643aba4d5119d53261732" style="width: 100.0%; height: 100.0%;">user_name    MadihaSSheikh Name: 173, dtype: object</div>`)[0];
+                popup_e0bf6d9e14e04e28974da4b02539a524.setContent(html_eb46d6069a0643aba4d5119d53261732);
+            
+
+            marker_09321ec553a24738b1b72f38194322dd.bindPopup(popup_e0bf6d9e14e04e28974da4b02539a524)
+            ;
+
+            
+        
+    
+        var marker_2519c86e48fe4b5b9feba061cd6c1d90 = L.marker(
+            [81.44737, 27.481016],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_dfd184d91be94bfeb4b717ac184632ae);
+        
+    
+            var popup_11aebe0529bf49daad1f1687124ff7d9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_76b27f88a3c64474a55568c435661c0e = $(`<div id="html_76b27f88a3c64474a55568c435661c0e" style="width: 100.0%; height: 100.0%;">user_name    Asheesh00007 Name: 249, dtype: object</div>`)[0];
+                popup_11aebe0529bf49daad1f1687124ff7d9.setContent(html_76b27f88a3c64474a55568c435661c0e);
+            
+
+            marker_2519c86e48fe4b5b9feba061cd6c1d90.bindPopup(popup_11aebe0529bf49daad1f1687124ff7d9)
+            ;
+
+            
+        
+    
+        var marker_df7efd48cebb47d495e604619ce8ba4a = L.marker(
+            [70.06275, 31.218052],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_dfd184d91be94bfeb4b717ac184632ae);
+        
+    
+            var popup_7bf1acb12ba34676b4035f5417955a28 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d15e1381f8914aefa147aa4a8b6a0d39 = $(`<div id="html_d15e1381f8914aefa147aa4a8b6a0d39" style="width: 100.0%; height: 100.0%;">user_name    Zaibi_Joker Name: 257, dtype: object</div>`)[0];
+                popup_7bf1acb12ba34676b4035f5417955a28.setContent(html_d15e1381f8914aefa147aa4a8b6a0d39);
+            
+
+            marker_df7efd48cebb47d495e604619ce8ba4a.bindPopup(popup_7bf1acb12ba34676b4035f5417955a28)
+            ;
+
+            
+        
+    
+        var marker_cf62409055b3499db99228abda72f875 = L.marker(
+            [-86.7261, 33.484861],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_dfd184d91be94bfeb4b717ac184632ae);
+        
+    
+            var popup_94bc9e8163ab407e897ad8f7ce4beb23 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_463bd2a6fda2415f9a931d89edfaa759 = $(`<div id="html_463bd2a6fda2415f9a931d89edfaa759" style="width: 100.0%; height: 100.0%;">user_name    sdataanalytics Name: 262, dtype: object</div>`)[0];
+                popup_94bc9e8163ab407e897ad8f7ce4beb23.setContent(html_463bd2a6fda2415f9a931d89edfaa759);
+            
+
+            marker_cf62409055b3499db99228abda72f875.bindPopup(popup_94bc9e8163ab407e897ad8f7ce4beb23)
+            ;
+
+            
+        
+    
+        var marker_ca1098b2d41b4780953286bcc1c2cd90 = L.marker(
+            [69.32887, 27.708226],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_dfd184d91be94bfeb4b717ac184632ae);
+        
+    
+            var popup_dfc7a2d350114d1cbaee7ec506baac3e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_842b7e28e1044cf0a621e542174ff173 = $(`<div id="html_842b7e28e1044cf0a621e542174ff173" style="width: 100.0%; height: 100.0%;">user_name    jarrarkazmi14 Name: 391, dtype: object</div>`)[0];
+                popup_dfc7a2d350114d1cbaee7ec506baac3e.setContent(html_842b7e28e1044cf0a621e542174ff173);
+            
+
+            marker_ca1098b2d41b4780953286bcc1c2cd90.bindPopup(popup_dfc7a2d350114d1cbaee7ec506baac3e)
+            ;
+
+            
+        
+    
+        var marker_0f74bbd038454019a3dbe59d9ac75874 = L.marker(
+            [69.32887, 27.708226],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_dfd184d91be94bfeb4b717ac184632ae);
+        
+    
+            var popup_98a621f806e5440099ea9f873df5c75b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ccca87f4a0814eeb9c0b746dae43665b = $(`<div id="html_ccca87f4a0814eeb9c0b746dae43665b" style="width: 100.0%; height: 100.0%;">user_name    Faizee64 Name: 459, dtype: object</div>`)[0];
+                popup_98a621f806e5440099ea9f873df5c75b.setContent(html_ccca87f4a0814eeb9c0b746dae43665b);
+            
+
+            marker_0f74bbd038454019a3dbe59d9ac75874.bindPopup(popup_98a621f806e5440099ea9f873df5c75b)
+            ;
+
+            
+        
+    
+        var marker_1134d13cdf3d4e988f2d91ff02ab2f18 = L.marker(
+            [74.26758, 31.451222],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_dfd184d91be94bfeb4b717ac184632ae);
+        
+    
+            var popup_60cc5486aea847e4af31f4f6ecc8540a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1f42f5ec8243486eb3e00973ea082a18 = $(`<div id="html_1f42f5ec8243486eb3e00973ea082a18" style="width: 100.0%; height: 100.0%;">user_name    Ramadaan2022 Name: 513, dtype: object</div>`)[0];
+                popup_60cc5486aea847e4af31f4f6ecc8540a.setContent(html_1f42f5ec8243486eb3e00973ea082a18);
+            
+
+            marker_1134d13cdf3d4e988f2d91ff02ab2f18.bindPopup(popup_60cc5486aea847e4af31f4f6ecc8540a)
+            ;
+
+            
+        
+    
+        var marker_1e9863292206449ebe34cc9226932754 = L.marker(
+            [74.13163, 32.126915],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_dfd184d91be94bfeb4b717ac184632ae);
+        
+    
+            var popup_09c57d592e9f469eb5e472e24335a102 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_aaaf06aad53d40ccb8c18ce474d0ac10 = $(`<div id="html_aaaf06aad53d40ccb8c18ce474d0ac10" style="width: 100.0%; height: 100.0%;">user_name    TahirMKhan8 Name: 565, dtype: object</div>`)[0];
+                popup_09c57d592e9f469eb5e472e24335a102.setContent(html_aaaf06aad53d40ccb8c18ce474d0ac10);
+            
+
+            marker_1e9863292206449ebe34cc9226932754.bindPopup(popup_09c57d592e9f469eb5e472e24335a102)
+            ;
+
+            
+        
+</script>
